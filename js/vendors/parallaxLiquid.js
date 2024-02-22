@@ -1,6 +1,6 @@
 /*!
     Crafto - Parallax Liquid Image
-    Created by ThemeZaa
+    Created by Pharmaconnect Africa
 !*/
 ! function(n) {
     var t = n(window),
