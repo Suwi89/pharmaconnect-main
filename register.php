@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
-        <title>PharmaConnect</title>
+        <title>Pharmaconnect</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="author" content="Pharmaconnect Africa">
@@ -21,8 +21,19 @@
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
         <link rel="stylesheet" href="demos/consulting/consulting.css" />
+
+        <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+
+      <!-- <link rel="stylesheet" href="css/intlTelInput.css"/> -->
+       <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+       <style>
+       .iti {
+         width: 100%;
+         display: block;
+        }
+     </style>
     </head>
-    <body data-mobile-nav-style="classic">  
+    <body data-mobile-nav-style="classic">
         <!-- start header -->
         <header class="header-with-topbar">
             <!-- start header top bar -->
@@ -77,14 +88,14 @@
                                 <li class="nav-item"><a href="demo-consulting-clients.html" class="nav-link">Partners</a></li>
                                 <!-- <li class="nav-item"><a href="demo-consulting-news.html" class="nav-link">News</a></li> -->
                               <li class="nav-item"><a href="contact.html" class="nav-link">Contacts</a></li>
-<li class="nav-item"><a href="register.php" class="nav-link">Register</a></li>
+                              <li class="nav-item"><a href="register.php" class="nav-link">Register</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-auto col-lg-2 text-end md-pe-0">
                         <div class="header-icon">
                             <div class="header-search-icon icon">
-                                <a href="#" class="search-form-icon header-search-form"><i class="feather icon-feather-search"></i></a> 
+                                <a href="#" class="search-form-icon header-search-form"><i class="feather icon-feather-search"></i></a>
                                 <div class="search-form-wrapper">
                                     <button title="Close" type="button" class="search-close alt-font">×</button>
                                     <form id="search-form" role="search" method="get" class="search-form text-left" action="search-result.html">
@@ -92,7 +103,7 @@
                                             <h2 class="text-dark-gray fw-600 ls-minus-1px text-center mb-4 alt-font">What are you looking for?</h2>
                                             <input class="search-input alt-font" id="search-form-input5e219ef164995" placeholder="Enter your keywords..." name="s" value="" type="text" autocomplete="off">
                                             <button type="submit" class="search-button">
-                                                <i class="feather icon-feather-search" aria-hidden="true"></i> 
+                                                <i class="feather icon-feather-search" aria-hidden="true"></i>
                                             </button>
                                         </div>
                                     </form>
@@ -103,10 +114,10 @@
                                     <span></span>
                                     <span></span>
                                     <span></span>
-                                    <span></span> 
+                                    <span></span>
                                 </div>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -135,13 +146,13 @@
         </header>
         <!-- end header -->
         <!-- start page title -->
-        <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin xs-py-0" data-parallax-background-ratio="0.5" style="background-image: url(https://via.placeholder.com/1925x1050)">
+        <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin xs-py-0" data-parallax-background-ratio="0.5" style="background-image: url(images/female-doc-register2.jpg)">
             <div class="opacity-light bg-dark-gray"></div>
             <div class="container">
                 <div class="row align-items-center justify-content-center small-screen">
                     <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-small" data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'>
-                        <h1 class="mb-5px alt-font text-white fw-400"><span class="opacity-6">See how can we help</span></h1>
-                        <h2 class="mb-0 text-white alt-font ls-minus-2px text-shadow-double-large fw-500">Our process</h2>
+                        <h1 class="mb-5px alt-font text-white fw-400"><span class="opacity-6">Cant wait to see you.</span></h1>
+                        <h2 class="mb-0 text-white alt-font ls-minus-2px text-shadow-double-large fw-500">Register</h2>
                     </div>
                     <div class="down-section text-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "easing": "easeOutQuad" }'>
                         <a href="#down-section" class="section-link">
@@ -154,153 +165,71 @@
             </div>
         </section>
         <!-- end page title -->
-        <!-- start section -->
-        <section class="bg-very-light-gray big-section" id="down-section">
-            <div class="container">
-                <div class="row align-items-center justify-content-center text-center text-lg-start" data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
-                    <div class="col-lg-5 col-md-10 md-mb-50px xs-mb-40px">
-                        <h2 class="fw-600 text-dark-gray ls-minus-2px mb-0">Explore the simple business process.</h2>
-                    </div>
-                    <div class="col-xl-2 offset-xl-2 offset-lg-1 col-md-3 col-sm-4 text-center xs-mb-30px">
-                        <span class="alt-font text-dark-gray fw-600 fs-130 ls-minus-2px text-highlight">89<span class="bg-base-color left-0px w-50 h-10px bottom-10px"></span></span>
-                    </div>
-                    <div class="col-lg-3 col-md-5 col-sm-6 last-paragraph-no-margin text-center text-sm-start">
-                        <span class="text-dark-gray fs-20 fw-600 d-inline-block mb-5px">Projects completed</span>
-                        <p class="w-90 lg-w-100">Lorem ipsum is simply dummy text the printing typesetting.</p>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 mt-7 md-mt-50px" data-anime='{ "el": "childs", "translateX": [-50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
-                    <!-- start process step item -->
-                    <div class="col text-center process-step-style-02 hover-box last-paragraph-no-margin md-mb-50px">
-                        <i class="line-icon-Idea-5 text-base-color icon-double-large mb-20px"></i>
-                        <span class="d-block alt-font text-dark-gray mb-5px fs-20 fw-600">Research</span>
-                        <p class="d-inline-block w-75 lg-w-85">Lorem ipsum is simply text the printing.</p>
-                        <div class="process-step-icon-box position-relative mt-30px">
-                            <span class="progress-step-separator bg-dark-gray opacity-1 w-55 separator-line-1px"></span>
-                            <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto bg-white h-80px w-80px fs-18 rounded-circle text-dark-gray box-shadow-double-large alt-font fw-500">
-                                <span class="number position-relative z-index-1 fw-600">01</span>
-                                <div class="box-overlay bg-white rounded-circle"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end process step item -->
-                    <!-- start process step item -->
-                    <div class="col text-center process-step-style-02 hover-box last-paragraph-no-margin md-mb-50px">
-                        <i class="line-icon-Fountain-Pen text-base-color icon-double-large mb-20px"></i>                            
-                        <span class="d-block alt-font text-dark-gray mb-5px fs-20 fw-600">Sketches</span>
-                        <p class="d-inline-block w-75 lg-w-85">Lorem ipsum is simply text the printing.</p>
-                        <div class="process-step-icon-box position-relative mt-30px">
-                            <span class="progress-step-separator bg-dark-gray opacity-1 w-55 separator-line-1px"></span>
-                            <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto bg-white h-80px w-80px fs-18 rounded-circle text-dark-gray box-shadow-double-large alt-font fw-500">
-                                <span class="number position-relative z-index-1 fw-600">02</span>
-                                <div class="box-overlay bg-white rounded-circle"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end process step item -->
-                    <!-- start process step item -->
-                    <div class="col text-center process-step-style-02 hover-box last-paragraph-no-margin xs-mb-50px">
-                        <i class="line-icon-Loading-2 text-base-color icon-double-large mb-20px"></i>                            
-                        <span class="d-block alt-font text-dark-gray mb-5px fs-20 fw-600">Concept</span>
-                        <p class="d-inline-block w-75 lg-w-85">Lorem ipsum is simply text the printing.</p>
-                        <div class="process-step-icon-box position-relative mt-30px">
-                            <span class="progress-step-separator bg-dark-gray opacity-1 w-55 separator-line-1px"></span>
-                            <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto bg-white h-80px w-80px fs-18 rounded-circle text-dark-gray box-shadow-double-large alt-font fw-500">
-                                <span class="number position-relative z-index-1 fw-600">03</span>
-                                <div class="box-overlay bg-white rounded-circle"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end process step item -->
-                    <!-- start process step item -->
-                    <div class="col text-center process-step-style-02 hover-box last-paragraph-no-margin">
-                        <i class="line-icon-Juice text-base-color icon-double-large mb-20px"></i>                            
-                        <span class="d-block alt-font text-dark-gray mb-5px fs-20 fw-600">Presentation</span>
-                        <p class="d-inline-block w-75 lg-w-85">Lorem ipsum is simply text the printing.</p>
-                        <div class="process-step-icon-box position-relative mt-30px">
-                            <div class="process-step-icon d-flex justify-content-center align-items-center mx-auto bg-white h-80px w-80px fs-18 rounded-circle text-dark-gray box-shadow-double-large alt-font fw-500">
-                                <span class="number position-relative z-index-1 fw-600">04</span>
-                                <div class="box-overlay bg-white rounded-circle"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end process step item -->
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
-        <!-- start section -->
-        <section class="position-relative overflow-hidden py-0 bg-very-light-gray">
-            <div class="skrollr-parallax pt-7 pb-7 md-pt-12 md-pb-12 mx-auto" data-bottom-top="width: 63%" data-center-top="width: 100%;" data-parallax-background-ratio="0.5" style="background-image: url('https://via.placeholder.com/1920x1100')">
-                <div class="opacity-extra-medium bg-gradient-black-dark-orange"></div>
-                <div class="container">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-xl-9 col-lg-10 text-center position-relative last-paragraph-no-margin parallax-scrolling-style-2">
-                            <a href="https://www.youtube.com/watch?v=cfXHhfNy7tU" class="position-relative d-inline-block text-center rounded-circle border border-3 border-color-transparent-white-very-light video-icon-box video-icon-extra-large popup-youtube mb-6">
-                                <span>
-                                    <span class="video-icon">
-                                        <i class="fa-solid fa-play text-white"></i> 
-                                    </span>
-                                </span>
-                            </a>
-                            <span class="opacity-6 ls-2px text-uppercase alt-font text-white d-block mb-2">Supporting your business goal</span>
-                            <h1 class="text-white fw-500 alt-font ls-minus-2px text-shadow-double-large mb-0">Some of the worldwide clients we've helped.</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
+
+
         <!-- start section -->
         <section class="bg-very-light-gray">
-            <div class="container"> 
-                <div class="row justify-content-center mb-3">
-                    <div class="col-lg-7 text-center" data-anime='{ "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <span class="fw-600 ls-1px fs-16 alt-font d-inline-block text-uppercase mb-5px text-base-color">Frequently asked questions</span>
-                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px">How can we help?</h2>
-                    </div>
-                </div>
+            <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-xl-10">
-                        <div class="row row-cols-1 row-cols-md-2" data-anime='{ "el": "childs", "perspective": [1200,1200], "willchange": "transform", "translateY": [0, 0], "scale": [1.1, 1], "rotateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                            <!-- start content box -->
-                            <div class="col mb-30px last-paragraph-no-margin">
-                                <div class="bg-white h-100 ps-50px pe-50px pt-40px pb-40px xs-p-30px box-shadow-quadruple-large border-radius-5px">
-                                    <span class="text-dark-gray mb-5px d-inline-block fs-20 fw-600">Can you help us raise money?</span>
-                                    <p>Lorem ipsum is simply dummy text of the printing typesetting industry.</p>
-                                </div>
-                            </div>
-                            <!-- end content box -->
-                            <!-- start content box -->
-                            <div class="col mb-30px last-paragraph-no-margin">
-                                <div class="bg-white h-100 ps-50px pe-50px pt-40px pb-40px xs-p-30px box-shadow-quadruple-large border-radius-5px">
-                                    <span class="text-dark-gray mb-5px d-inline-block fs-20 fw-600">Do we really need a business plan?</span>
-                                    <p>Lorem ipsum is simply dummy text of the printing typesetting industry.</p>
-                                </div>
-                            </div>
-                            <!-- end content box -->
-                            <!-- start content box -->
-                            <div class="col sm-mb-30px last-paragraph-no-margin">
-                                <div class="bg-white h-100 ps-50px pe-50px pt-40px pb-40px xs-p-30px box-shadow-quadruple-large border-radius-5px">
-                                    <span class="text-dark-gray mb-5px d-inline-block fs-20 fw-600">Will you sign a agreement?</span>
-                                    <p>Lorem ipsum is simply dummy text of the printing typesetting industry.</p>
-                                </div>
-                            </div>
-                            <!-- end content box -->
-                            <!-- start content box -->
-                            <div class="col last-paragraph-no-margin">
-                                <div class="bg-white h-100 ps-50px pe-50px pt-40px pb-40px xs-p-30px box-shadow-quadruple-large border-radius-5px">
-                                    <span class="text-dark-gray mb-5px d-inline-block fs-20 fw-600">Can you send us samples of work?</span>
-                                    <p>Lorem ipsum is simply dummy text of the printing typesetting industry.</p>
-                                </div>
-                            </div>
-                            <!-- end content box -->
-                        </div>
+                    <div class="col-lg-7 text-center mb-2" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                        <span class="fw-600 ls-1px fs-16 alt-font d-inline-block text-uppercase mb-5px text-base-color">Quick and Easy Registration!</span>
+                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px">Can you tell us about yourself?</h2>
                     </div>
                 </div>
-                <div class="row justify-content-center" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 100, "easing": "easeOutQuad" }'>
-                    <div class="col-12 text-center mt-6">
-                        <h6 class="alt-font text-dark-gray ls-minus-1px mb-0">Didn't find the right response? <a href="contact.html" class="text-decoration-line-bottom-medium text-dark-gray fw-600 d-inline-block">view more from here</a></h6>
+                <div class="row row-cols-md-1 justify-content-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                    <div class="col-xl-9 col-lg-11">
+                        <!-- start contact form -->
+                        <form action="email-templates/contact-form.php" method="post" class="row contact-form-style-02">
+                            <div class="col-md-2 mb-30px">
+                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" name="name" placeholder="Title*" />
+                            </div>
+                            <div class="col-md-5 mb-30px">
+                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" name="familyname" placeholder="Family Name*" />
+                            </div>
+                            <div class="col-md-5 mb-30px">
+                                <input class="box-shadow-quadruple-large form-control required" type="text" name="name" placeholder="First Name*" />
+                            </div>
+                            <div class="col-md-6 mb-30px" >
+                                <input class="box-shadow-quadruple-large form-control" type="text" name="organisation" placeholder="Organisation" />
+
+                            </div>
+                            <div class="col-md-6 mb-30px">
+                                <input class="box-shadow-quadruple-large form-control" type="text" name="address" placeholder="Address" />
+                            </div>
+
+                            <div class="col-md-6 mb-30px">
+                                <input class="box-shadow-quadruple-large form-control" type="text" name="postal-code" placeholder="Postal Code" />
+                            </div>
+
+                            <div class="col-md-6 mb-30px">
+                                <input class="box-shadow-quadruple-large form-control" type="text" name="city" placeholder="City" />
+                            </div>
+
+
+                            <div class="col-md-6 mb-30px" >
+                                <!-- <input class="box-shadow-quadruple-large form-control" type="tel" name="phone" placeholder="Your phone" /> -->
+                                <input  class="box-shadow-quadruple-large form-control"  name="phone" type="text" id="phone" placeholder="Your phone"/>
+
+
+                            </div>
+                            <div class="col-md-6 mb-30px">
+                                <input class="box-shadow-quadruple-large form-control" type="text" name="subject" placeholder="Your Email" />
+                            </div>
+                            <div class="col-md-12 mb-30px">
+                                <textarea class="box-shadow-quadruple-large form-control" cols="40" rows="4" name="comment" placeholder="Anything else you would like to share"></textarea>
+                            </div>
+                            <div class="col-md-7 last-paragraph-no-margin">
+                                <p class="text-center text-md-start fs-16">We are committed to protecting your privacy. We will never collect information about you without your explicit consent.</p>
+                            </div>
+                            <div class="col-md-5 text-center text-md-end sm-mt-20px">
+                                <input type="hidden" name="redirect" value="">
+                                <button class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge submit" style="background-color:	#FF7417;" type="submit">Submit</button>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-results mt-20px d-none"></div>
+                            </div>
+                        </form>
+                        <!-- end contact form -->
                     </div>
                 </div>
             </div>
@@ -309,7 +238,7 @@
         <!-- start footer -->
         <footer class="footer-light p-0 position-relative">
             <div id="particles-04" class="position-absolute h-100 top-0 left-0 z-index-minus-1 w-100" data-particle="true" data-particle-options='{"particles": {"number": {"value": 5,"density": {"enable": true,"value_area": 1000}},"color":{"value":["#b7b9be", "#dd6531"]},"shape": {"type": "circle","stroke":{"width":0,"color":"#000000"}},"opacity": {"value": 0.5,"random": false,"anim": {"enable": false,"speed": 1,"sync": false}},"size": {"value": 8,"random": true,"anim": {"enable": false,"sync": true}},"move": {"enable": true,"speed":2,"direction": "right","random": false,"straight": false}},"interactivity": {"detect_on": "canvas","events": {"onhover": {"enable": false,"mode": "repulse"},"onclick": {"enable": false,"mode": "push"},"resize": true}},"retina_detect": false}'></div>
-            <div class="container"> 
+            <div class="container">
                 <div class="row justify-content-center pt-7 sm-pt-50px">
                     <!-- start footer column -->
                     <div class="col-7 col-lg-3 col-md-12 col-sm-6 text-md-center text-lg-start md-mb-30px">
@@ -357,7 +286,7 @@
                         </div>
                     </div>
                     <!-- end footer column -->
-                </div> 
+                </div>
                 <div class="row justify-content-center align-items-center pt-5 sm-pt-30px">
                     <!-- start divider -->
                     <div class="col-12">
@@ -365,11 +294,11 @@
                     </div>
                     <!-- end divider -->
                     <!-- start copyright -->
-                    <div class="col-lg-6 pt-25px pb-25px md-pt-0 fs-16 last-paragraph-no-margin order-2 order-lg-1 text-center text-lg-start"><p>&copy; 2024 PharmaConnect</p></div>
+                    <div class="col-lg-6 pt-25px pb-25px md-pt-0 fs-16 last-paragraph-no-margin order-2 order-lg-1 text-center text-lg-start"><p>&copy; 2024 Site managed by<a href="https://www.pharmaconnect.co.za" target="_blank" class="text-decoration-line-bottom text-dark-gray fw-500">Pharmaconnect Africa</a></p></div>
                     <!-- end copyright -->
                     <!-- start footer menu -->
                     <div class="col-lg-6 pt-25px pb-25px md-pb-5px fs-16 order-1 order-lg-2 text-center text-lg-end">
-                        <ul class="footer-navbar md-lh-normal"> 
+                        <ul class="footer-navbar md-lh-normal">
                             <li class="nav-item"><a href="#" class="nav-link">Privacy policy</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Terms and conditions</a></li>
                             <li class="nav-item"><a href="#" class="nav-link">Copyright</a></li>
@@ -377,7 +306,7 @@
                     </div>
                     <!-- end footer menu -->
                 </div>
-            </div> 
+            </div>
         </footer>
         <!-- end footer -->
          <!-- start scroll progress -->
@@ -388,8 +317,16 @@
         </div>
         <!-- end scroll progress -->
         <!-- javascript libraries -->
+        <script>
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input, {
+                separateDialCode: true
+            });
+        </script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
     </body>
 </html>
