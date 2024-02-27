@@ -3736,6 +3736,7 @@ $('.contact-form').each(function() {
                 .after('<img src="../images/loader/ajax-loader.gif" class="loader" />')
                 .attr('disabled', 'disabled');
 
+            $('#loading').show();
 
            $.post(action, {
                     name: $('#name').val(),
@@ -3751,12 +3752,17 @@ $('.contact-form').each(function() {
                    comment: $('#comment').val()
                 },
                 function(data) {
+
                     document.getElementById('message').innerHTML = data;
+                    document.getElementById("message").style.backgroundColor='#9ce79c';
                     $('#message').slideDown('slow');
+
                     $('.contact-form img.loader').fadeOut('slow', function() {
                         $(this).remove()
                     });
                     $('#submit').removeAttr('disabled');
+                    $('#loading').hide();
+
                 }
             );
         });
