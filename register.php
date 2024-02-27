@@ -31,10 +31,33 @@
          width: 100%;
          display: block;
         }
+       #loading {
+           position: fixed;
+           display: block;
+           width: 100%;
+           height: 100%;
+           top: 0;
+           left: 0;
+           text-align: center;
+           opacity: 0.7;
+           background-color: #fff;
+           z-index: 99;
+       }
+
+       #loading-image {
+           position: absolute;
+           top: 100px;
+           left: 240px;
+           z-index: 100;
+       }
      </style>
     </head>
     <body data-mobile-nav-style="classic">
-        <!-- start header -->
+    <div id="loading">
+        <img id="loading-image" src="images/loader/ajax-loader.gif" alt="Loading..." />
+    </div>
+
+    <!-- start header -->
         <header class="header-with-topbar">
             <!-- start header top bar -->
             <div class="header-top-bar top-bar-light bg-white disable-fixed md-border-bottom border-color-transparent-dark-very-light">
@@ -226,9 +249,9 @@
                             </div>
                             <div class="col-md-5 text-center text-md-end sm-mt-20px">
                                 <input type="hidden" name="redirect" value="">
-                                <button class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge " style="background-color:	#FF7417;" type="submit">Submit</button>
+                                <button class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge " name="submit" id="submit" style="background-color:	#FF7417;" type="submit">Submit</button>
                             </div>
-                            <div class="col-lg-12 alert-notification">
+                            <div class="col-lg-12 alert-notification"  style="height: 80px; ">
                                   <div id="message" class="alert-msg"></div>
                               </div>
                             <div class="col-12">
@@ -333,6 +356,16 @@
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
+
+        <!-- Sweetalert 2 -->
+        <script src="assets/sweetalert/sweetalert2.all.min.js"></script>
+        <script src="assets/sweetalert/sweetalerts.min.js"></script>
+        <script>
+            $(window).on('load', function () {
+                $('#loading').hide();
+            })
+        </script>
 
     </body>
 </html>

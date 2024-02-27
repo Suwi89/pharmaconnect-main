@@ -56,7 +56,6 @@
     $e_reply = "You can contact us for any further clarifications  via email, info@pharmaconnect.com ";
     $msg = wordwrap($e_body . $e_content . $e_reply, 70);
 
-    // $host= "mail.mets-limited.com";
 
     $host= "server334.web-hosting.com";
 
