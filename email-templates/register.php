@@ -16,27 +16,9 @@
         define("PHP_EOL", "\r\n");
     }
 
-
-
     $registrant_name     = $_POST['name'];
     $registrant_email    = $_POST['email'];
-    $phone     = $_POST['phone'];
-    $comments = "hello";
-    $country = "Zambia";
     $status = "Submitted";
-
-
-   echo "Title :" .$_POST['title'];
-    echo "familyname :" .$_POST['familyname'];
-    echo "name :" .$_POST['name'];
-    echo "organisation :" .$_POST['organisation'];
-    echo "postal_code :" .$_POST['postal_code'];
-    echo "city :" .$_POST['city'];
-    echo "country :" .$_POST['country'];
-    echo "phone :" .$_POST['phone'];
-    echo "email :" .$_POST['email'];
-    echo "address :" .$_POST['address'];
-    echo "comment :" .$_POST['comment'];
 
     //$connection=mysqli_connect("localhost", "root", "root", "posystem");
 
@@ -68,23 +50,19 @@
 
     $company_email_address = "admin@mets-limited.com";
     $e_subject = 'PHARMACONNECT REGISTRATION';
-    $e_body = "You have been contacted by $registrant_name , their additional message is as follows." . PHP_EOL . PHP_EOL;
-    $e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
-    $e_phone = "Phone: $phone" . PHP_EOL . PHP_EOL;
-    $e_reply = "You can contact$registrant_name  via email, $registrant_email ";
-    $msg = wordwrap($e_body . $e_content . $e_phone . $e_reply, 70);
+    $e_body = "Congratulation $registrant_name , you have successfully registered for the 2024 Pharmaconnect.." . PHP_EOL . PHP_EOL;
+    $e_content = "We look forward to seeing you." . PHP_EOL . PHP_EOL;
+
+    $e_reply = "You can contact us for any further clarifications  via email, info@pharmaconnect.com ";
+    $msg = wordwrap($e_body . $e_content . $e_reply, 70);
 
     // $host= "mail.mets-limited.com";
 
     $host= "server334.web-hosting.com";
 
 
-
-    $recipient1 = "etheedentechnologies@gmail.com";
-    $recipient2 = "etheedentechnologies@gmail.com";
-
-
-
+    $recipient1 = $registrant_email;
+//    $recipient2 = "etheedentechnologies@gmail.com";
 
     include "PHPMailer.php";
     include "SMTP.php";
@@ -110,7 +88,7 @@
         //Recipients
         $mail->setFrom($company_email_address, 'Mailer');
         $mail->addAddress($registrant_email, 'Joe User');     //Add a recipient
-        $mail->addAddress($recipient2);               //Name is optional
+//        $mail->addAddress($recipient2);               //Name is optional
         $mail->addReplyTo('info@pharmaconnect.com', 'Information');
         // $mail->addCC('cc@example.com');
         // $mail->addBCC('bcc@example.com');
