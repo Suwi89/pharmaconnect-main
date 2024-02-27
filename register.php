@@ -179,52 +179,58 @@
                 <div class="row row-cols-md-1 justify-content-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
                     <div class="col-xl-9 col-lg-11">
                         <!-- start contact form -->
-                        <form action="email-templates/contact-form.php" method="post" class="row contact-form-style-02">
+                        <form action="email-templates/register.php" method="post" class="row contact-form-style-02  contact-form">
                             <div class="col-md-2 mb-30px">
-                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" name="name" placeholder="Title*" />
+                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="title" name="title" placeholder="Title*" required/>
                             </div>
                             <div class="col-md-5 mb-30px">
-                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" name="familyname" placeholder="Family Name*" />
+                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="familyname" name="familyname" placeholder="Family Name*" required/>
                             </div>
                             <div class="col-md-5 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control required" type="text" name="name" placeholder="First Name*" />
+                                <input class="box-shadow-quadruple-large form-control required" type="text" id="name" name="name" placeholder="First Name*" required />
                             </div>
                             <div class="col-md-6 mb-30px" >
-                                <input class="box-shadow-quadruple-large form-control" type="text" name="organisation" placeholder="Organisation" />
+                                <input class="box-shadow-quadruple-large form-control" type="text" id="organisation" name="organisation" placeholder="Organisation" required/>
 
                             </div>
                             <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control" type="text" name="address" placeholder="Address" />
+                                <input class="box-shadow-quadruple-large form-control" type="text" id="address" name="address" placeholder="Address" required/>
                             </div>
 
-                            <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control" type="text" name="postal-code" placeholder="Postal Code" />
+                            <div class="col-md-4 mb-30px">
+                                <input class="box-shadow-quadruple-large form-control" type="text" id="postal-code" name="postal-code" placeholder="Postal Code"required />
                             </div>
 
-                            <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control" type="text" name="city" placeholder="City" />
+                            <div class="col-md-4 mb-30px">
+                                <input class="box-shadow-quadruple-large form-control" type="text" id="city" name="city" placeholder="City" required/>
                             </div>
 
+                            <div class="col-md-4 mb-30px">
+                                <input class="box-shadow-quadruple-large form-control" type="text" id="country" name="country" placeholder="Country" required/>
+                            </div>
 
                             <div class="col-md-6 mb-30px" >
                                 <!-- <input class="box-shadow-quadruple-large form-control" type="tel" name="phone" placeholder="Your phone" /> -->
-                                <input  class="box-shadow-quadruple-large form-control"  name="phone" type="text" id="phone" placeholder="Your phone"/>
+                                <input  class="box-shadow-quadruple-large form-control"  name="phone" type="text" id="phone" placeholder="Your phone" required/>
 
 
                             </div>
                             <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control" type="text" name="subject" placeholder="Your Email" />
+                                <input class="box-shadow-quadruple-large form-control" type="text" id="email" name="email" placeholder="Your Email" required/>
                             </div>
                             <div class="col-md-12 mb-30px">
-                                <textarea class="box-shadow-quadruple-large form-control" cols="40" rows="4" name="comment" placeholder="Anything else you would like to share"></textarea>
+                                <textarea class="box-shadow-quadruple-large form-control" cols="40" rows="4" id="comment" name="comment" placeholder="Anything else you would like to share"></textarea>
                             </div>
                             <div class="col-md-7 last-paragraph-no-margin">
                                 <p class="text-center text-md-start fs-16">We are committed to protecting your privacy. We will never collect information about you without your explicit consent.</p>
                             </div>
                             <div class="col-md-5 text-center text-md-end sm-mt-20px">
                                 <input type="hidden" name="redirect" value="">
-                                <button class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge submit" style="background-color:	#FF7417;" type="submit">Submit</button>
+                                <button class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge " style="background-color:	#FF7417;" type="submit">Submit</button>
                             </div>
+                            <div class="col-lg-12 alert-notification">
+                                  <div id="message" class="alert-msg"></div>
+                              </div>
                             <div class="col-12">
                                 <div class="form-results mt-20px d-none"></div>
                             </div>
