@@ -3723,3 +3723,43 @@ function initMap() {
     {if($('#subscribe-popup').length>0){let delaySecond=1.5,expireDays=30,cookieName='crafto-promo-popup';if(getCookie(cookieName)!='shown'){setTimeout(function(){$.magnificPopup.open({showCloseBtn:false,items:{src:'#subscribe-popup'},type:'inline',mainClass:'my-mfp-zoom-in',callbacks:{close:function(){if($('#newsletter-off').is(':checked')){setCookie(cookieName,'shown',expireDays);}}}});},(delaySecond*3500));}}}
 }
 
+$('.contact-form').each(function() {
+    var formInstance = $(this);
+    formInstance.submit(function() {
+
+        var action = $(this).attr('action');
+
+        $("#message").slideUp(750, function() {
+            $('#message').hide();
+
+            $('#submit')
+                .after('<img src="../images/loader/ajax-loader.gif" class="loader" />')
+                .attr('disabled', 'disabled');
+
+
+           $.post(action, {
+                    name: $('#name').val(),
+                    title: $('#title').val(),
+                    familyname: $('#familyname').val(),
+                    organisation: $('#organisation').val(),
+                    postal_code: $('#postal-code').val(),
+                    city: $('#city').val(),
+                    country: $('#country').val(),
+                    phone: $('#phone').val(),
+                    email: $('#email').val(),
+                    address: $('#address').val(),
+                   comment: $('#comment').val()
+                },
+                function(data) {
+                    document.getElementById('message').innerHTML = data;
+                    $('#message').slideDown('slow');
+                    $('.contact-form img.loader').fadeOut('slow', function() {
+                        $(this).remove()
+                    });
+                    $('#submit').removeAttr('disabled');
+                }
+            );
+        });
+        return false;
+    });
+});
