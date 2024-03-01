@@ -96,11 +96,11 @@
                                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                                 <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
                                 <li class="nav-item dropdown simple-dropdown">
-                                    <a href="demo-consulting-services.html" class="nav-link">Conferences</a>
+                                    <a href="#" class="nav-link">Conferences</a>
                                     <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                         <li><a href="demo-consulting-services-details.html">Pharmaconnect 2023</a></li>
-                                        <!-- <li><a href="demo-consulting-services-details.html">Middle marketing</a></li>
+                                        <li><a href="pharmaconnectAfricaConference2024.html">Pharmaconnect 2024</a></li><!-- 
                                         <li><a href="demo-consulting-services-details.html">Consumer markets</a></li>
                                         <li><a href="demo-consulting-services-details.html">Tax efficiency</a></li> -->
                                     </ul>
