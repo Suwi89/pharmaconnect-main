@@ -99,15 +99,15 @@
                                     <a href="#" class="nav-link">Conferences</a>
                                     <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a href="demo-consulting-services-details.html">Pharmaconnect 2023</a></li>
+                                        <li><a href="pharmaconnectAfricaConference2023.html">Pharmaconnect 2023</a></li>
                                         <li><a href="pharmaconnectAfricaConference2024.html">Pharmaconnect 2024</a></li><!-- 
-                                        <li><a href="demo-consulting-services-details.html">Consumer markets</a></li>
-                                        <li><a href="demo-consulting-services-details.html">Tax efficiency</a></li> -->
+                                        <li><a href="pharmaconnectAfricaConference2023.html">Consumer markets</a></li>
+                                        <li><a href="pharmaconnectAfricaConference2023.html">Tax efficiency</a></li> -->
                                     </ul>
                                 </li>
-                                <!-- <li class="nav-item"><a href="demo-consulting-process.html" class="nav-link">Process</a></li> -->
-                                <li class="nav-item"><a href="demo-consulting-clients.html" class="nav-link">Partners</a></li>
-                                <!-- <li class="nav-item"><a href="demo-consulting-news.html" class="nav-link">News</a></li> -->
+                                <!-- <li class="nav-item"><a href="pharmaconnect-conference-process.html" class="nav-link">Process</a></li> -->
+                                <li class="nav-item"><a href="pharmaconnect-conference-partners.html" class="nav-link">Partners</a></li>
+                                <!-- <li class="nav-item"><a href="pharmaconnect-conference-news.html" class="nav-link">News</a></li> -->
                               <li class="nav-item"><a href="contact.html" class="nav-link">Contacts</a></li>
                               <li class="nav-item"><a href="register.php" class="nav-link">Register</a></li>
                             </ul>
@@ -147,7 +147,7 @@
                 <span class="close-menu text-dark-gray bg-white"><i class="fa-solid fa-xmark"></i></span>
                 <div class="push-menu-wrapper text-dark-gray" data-scroll-options='{ "theme": "light" }'>
                     <div class="w-100">
-                        <h4 class="alt-font text-white fw-400 mb-30px d-block w-90 lh-40">Scalable business for <span class="d-inline-block fw-600 border-3 border-bottom border-color-base-color">startups</span></h4>
+                        <h4 class="alt-font text-white fw-400 mb-30px d-block w-90 lh-40">Pharmaconnect Africa<span class="d-inline-block fw-600 border-3 border-bottom border-color-base-color"></span></h4>
                     </div>
                     <div class="col-12">
                         <ul class="fs-20 ps-0 alt-font">
@@ -158,7 +158,7 @@
                         </ul>
                     </div>
                     <div class="border-top border-color-transparent-white-light pt-30px w-100">
-                        <span class="fs-24 fw-500 text-white"><a href="tel:12345678910">+1 234 567 8910</a></span>
+                        <span class="fs-24 fw-500 text-white"></span>
                         <a href="mailto:info@domain.com">info@domain.com</a>
                     </div>
                 </div>
@@ -286,8 +286,8 @@
                         <span class="alt-font d-block text-dark-gray fw-600 mb-10px fs-19">Company</span>
                         <ul>
                             <li><a href="about.html">Company</a></li>
-                            <li><a href="demo-consulting-services.html">Services</a></li>
-                            <li><a href="demo-consulting-process.html">Process</a></li>
+                            <li><a href="pharmaconnect-conference-services.html">Services</a></li>
+                            <li><a href="pharmaconnect-conference-process.html">Process</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
