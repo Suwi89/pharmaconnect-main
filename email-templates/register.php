@@ -1,11 +1,12 @@
     <?php
 
-    // include "../database/dbconnection.php";
 
     if (!$_POST) {
         exit;
     }
 
+
+// echo "Twesting page";
     // Email address verification, do not edit.
     function isEmail($email)
     {
@@ -20,10 +21,9 @@
     $registrant_email    = $_POST['email'];
     $status = "Submitted";
 
-    //$connection=mysqli_connect("localhost", "root", "root", "posystem");
 
-    $connection = new PDO("mysql:host=localhost;dbname=pharma", "root", "");
-    $connection -> exec("set names utf8");
+   $connection = new PDO("mysql:host=localhost;dbname=psaweb_pharma", "psaweb_admin", "!e#,VveuKPc(");
+   $connection -> exec("set names utf8");
     $stmt = $connection->prepare("INSERT INTO  registration (title, last_name, first_name, organisation, address, 
                            postal_code, city, country, phone, email, status, other_details) 
                          VALUES (:title, :last_name, :first_name, :organisation, :address, 
@@ -48,20 +48,25 @@
 
 
 
-    $company_email_address = "admin@mets-limited.com";
+//SEND EMAIL TO REGISTRANT
+
+    $company_email_address = "info@pharmaconnectafrica.com";
     $e_subject = 'PHARMACONNECT REGISTRATION';
-    $e_body = "Congratulation $registrant_name , you have successfully registered for the 2024 Pharmaconnect.." . PHP_EOL . PHP_EOL;
+    $e_body = "Congratulation  , you have successfully registered for the 2024 Pharmaconnect.." . PHP_EOL . PHP_EOL;
     $e_content = "We look forward to seeing you." . PHP_EOL . PHP_EOL;
 
-    $e_reply = "You can contact us for any further clarifications  via email, info@pharmaconnect.com ";
+    $e_reply = "You can contact us for any further clarifications  via email, info@pharmaconnectafrica.com ";
     $msg = wordwrap($e_body . $e_content . $e_reply, 70);
 
 
-    $host= "server334.web-hosting.com";
+    // $host= "box5150.bluehost.com";
+    // $host= "pharmaconnectafrica.com";
+    // $host= "website-618e1425.ebx.nfp.mybluehost.me";
+    $host= "mail.pharmaconnectafrica.com";
+    
 
 
     $recipient1 = $registrant_email;
-//    $recipient2 = "etheedentechnologies@gmail.com";
 
     include "PHPMailer.php";
     include "SMTP.php";
@@ -80,21 +85,15 @@
         $mail->Host       = $host;                     //Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
         $mail->Username   = $company_email_address;                 //SMTP username
-        $mail->Password   = 'Maiwaseh@us2028';                      //SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
-        $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set 'SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS'
+        $mail->Password   = 'pharmaconnectafrica@2024';                      //SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+        $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set 'SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS'
 
         //Recipients
-        $mail->setFrom($company_email_address, 'Mailer');
+        $mail->setFrom($company_email_address, 'Pharma Connect');
         $mail->addAddress($registrant_email, 'Joe User');     //Add a recipient
-//        $mail->addAddress($recipient2);               //Name is optional
-        $mail->addReplyTo('info@pharmaconnect.com', 'Information');
-        // $mail->addCC('cc@example.com');
-        // $mail->addBCC('bcc@example.com');
-
-        //Attachments
-        // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-        // $mail->addAttachment('/tmp/image-min.jpg', 'new-min.jpg');    //Optional name
+        $mail->addReplyTo('info@pharmaconnectafrica.com', 'Information');
+    
 
         //Content
         $mail->isHTML(false);                                  //Set email format to HTML
@@ -104,6 +103,97 @@
 
 
         $mail->send();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //SEND MAIL TO ADMIN
+        //SEND EMAIL TO REGISTRANT
+
+    // $company_email_address = "info@pharmaconnectafrica.com";
+    // $e_subject2 = 'NEW PHARMACONNECT REGISTRATION';
+    // $e_body2 = "Please note that there is a new registration for Pharmaconnect 2024" . PHP_EOL . PHP_EOL;
+    // $e_content2 = "Registrant Name : $registrant_name." . PHP_EOL . PHP_EOL;
+
+    // $e_reply2 = "You can view full list of regustrants <a href='https://www.pharmaconnectafrica.com'>Here<a/> ";
+    // $msg2 = wordwrap($e_body2 . $e_content2 . $e_reply2, 70);
+
+
+    // $host= "box5150.bluehost.com";
+
+
+    // $recipientAdmin = "idenzulujnr@gmail.com";
+
+    // include "PHPMailer.php";
+    // include "SMTP.php";
+    // // include "Exception.php";
+
+
+
+
+    // //Create an instance; passing 'true' enables exceptions
+    // $mail2 = new PHPMailer(false);
+
+    // try {
+    //     //Server settings
+    //     // $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    //     $mail2->isSMTP();                                            //Send using SMTP
+    //     $mail2->Host       = $host;                     //Set the SMTP server to send through
+    //     $mail2->SMTPAuth   = true;                                   //Enable SMTP authentication
+    //     $mail2->Username   = $company_email_address;                 //SMTP username
+    //     $mail2->Password   = '8-Ku+f)Md*y0';                      //SMTP password
+    //     $mail2->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
+    //     $mail2->Port       = 587;                                    //TCP port to connect to; use 587 if you have set 'SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS'
+
+    //     //Recipients
+    //     $mail2->setFrom($company_email_address, 'Mailer');
+    //     $mail2->addAddress($recipientAdmin, 'Pharmaconnect');     //Add a recipient
+    //     $mail2->addReplyTo('info@pharmaconnectafrica.com', 'Information');
+
+
+    //     //Content
+    //     $mail2->isHTML(false);                                  //Set email format to HTML
+    //     $mail2->Subject = $e_subject2;
+    //     $mail2->Body    = $msg2;
+
+
+    //     $mail2->send();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         echo 'Message has been sent';
     } catch (Exception $e) {
         // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";

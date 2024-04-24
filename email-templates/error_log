@@ -1,0 +1,109 @@
+[06-Mar-2024 01:05:54 America/Boise] PHP Parse error:  syntax error, unexpected end of file in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php on line 202
+[06-Mar-2024 01:07:56 America/Boise] PHP Parse error:  syntax error, unexpected end of file in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php on line 202
+[06-Mar-2024 01:11:07 America/Boise] PHP Parse error:  syntax error, unexpected end of file in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php on line 202
+[06-Mar-2024 01:12:03 America/Boise] PHP Parse error:  syntax error, unexpected end of file in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php on line 202
+[06-Mar-2024 01:31:37 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php:25
+Stack trace:
+#0 /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php on line 25
+[06-Mar-2024 01:31:44 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php:25
+Stack trace:
+#0 /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php on line 25
+[06-Mar-2024 01:36:35 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php:25
+Stack trace:
+#0 /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php on line 25
+[06-Mar-2024 01:37:51 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php:25
+Stack trace:
+#0 /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php on line 25
+[06-Mar-2024 01:39:01 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php:25
+Stack trace:
+#0 /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php on line 25
+[06-Mar-2024 01:41:44 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php:25
+Stack trace:
+#0 /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php on line 25
+[06-Mar-2024 01:45:19 America/Boise] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php:25
+Stack trace:
+#0 /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home1/ebxnfpmy/public_html/website_618e1425/email-templates/register.php on line 25
+[15-Apr-2024 08:44:09 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'ebxnfpmy_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'ebxnfpmy_admin', 'Obn3&6b3aLGP')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[15-Apr-2024 08:44:25 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'ebxnfpmy_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'ebxnfpmy_admin', 'Obn3&6b3aLGP')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[15-Apr-2024 08:45:31 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'ebxnfpmy_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'ebxnfpmy_admin', 'Obn3&6b3aLGP')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[15-Apr-2024 11:12:23 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'ebxnfpmy_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'ebxnfpmy_admin', 'Obn3&6b3aLGP')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[15-Apr-2024 23:19:08 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'ebxnfpmy_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'ebxnfpmy_admin', 'Obn3&6b3aLGP')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[15-Apr-2024 23:25:57 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'psaweb_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'psaweb_admin', '!e#,VveuKPc(')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[15-Apr-2024 23:26:16 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'psaweb_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'psaweb_admin', '!e#,VveuKPc(')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[18-Apr-2024 19:16:26 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'psaweb_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'psaweb_admin', '!e#,VveuKPc(')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[18-Apr-2024 19:16:48 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'psaweb_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'psaweb_admin', '!e#,VveuKPc(')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[18-Apr-2024 19:16:58 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'psaweb_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'psaweb_admin', '!e#,VveuKPc(')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[22-Apr-2024 15:12:25 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'psaweb_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'psaweb_admin', '!e#,VveuKPc(')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[22-Apr-2024 15:12:50 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'psaweb_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'psaweb_admin', '!e#,VveuKPc(')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[22-Apr-2024 15:36:35 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'psaweb_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'psaweb_admin', '!e#,VveuKPc(')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
+[23-Apr-2024 09:15:12 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'psaweb_admin'@'localhost' (using password: YES) in /home3/psaweb/public_html/website_da140b44/email-templates/register.php:25
+Stack trace:
+#0 /home3/psaweb/public_html/website_da140b44/email-templates/register.php(25): PDO->__construct('mysql:host=loca...', 'psaweb_admin', '!e#,VveuKPc(')
+#1 {main}
+  thrown in /home3/psaweb/public_html/website_da140b44/email-templates/register.php on line 25
