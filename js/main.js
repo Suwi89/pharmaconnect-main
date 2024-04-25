@@ -264,9 +264,9 @@
             $('.header-cart').children('.dropdown-menu').removeClass('show');
         }
         // Close left-modern-header menu
-        if (!$(e.target).closest('.left-modern-header').length) {
-            $(".left-modern-header").collapse('hide');
-        }
+        // if (!$(e.target).closest('.left-modern-header').length) {
+        //     $(".left-modern-header").collapse('hide');
+        // }
     });
 
     // Close on escape key

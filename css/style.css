@@ -19239,3 +19239,7 @@ footer .footer-navbar .nav-item:last-child a {
 .justify-p {
   text-align: justify;
 }
+
+.float-right {
+  float: right !important;
+}
