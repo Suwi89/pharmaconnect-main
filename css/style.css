@@ -19235,3 +19235,7 @@ footer .footer-navbar .nav-item:last-child a {
 .bio-title{
   color: #00008B;
 }
+
+.justify-p {
+  text-align: justify;
+}
