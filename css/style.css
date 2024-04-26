@@ -11883,6 +11883,24 @@ blockquote footer {
   position: relative;
   z-index: 1;
 }
+
+.featurebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
 .feature-box .feature-box-icon i:not([class*=text-gradient-]) {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19237,9 +19255,36 @@ footer .footer-navbar .nav-item:last-child a {
 }
 
 .justify-p {
-  text-align: justify;
+  text-align: justify !important;
 }
 
 .float-right {
   float: right !important;
 }
+
+.h1-header{
+  font-size: 48px !important;
+}
+
+.bolder {
+  font-weight: bold !important;
+}
+
+.blog-wrapper {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+}
+
+.listshow li{
+  list-style: disc !important;
+}
+
+.orange-btn:hover {
+  background-color: #dd6531 !important;
+  border-color: #dd6531 !important;
+  color: white !important; /* Change text color to ensure readability */
+}
+
+
+

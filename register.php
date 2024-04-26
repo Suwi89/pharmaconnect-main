@@ -22,6 +22,18 @@
         <link rel="stylesheet" href="css/responsive.css"/>
         <link rel="stylesheet" href="demos/consulting/consulting.css" />
 
+        <link rel="stylesheet"  href="assets/fonts/icomoon/style.css" />
+        <link rel="stylesheet" href="css/nav.css"/>
+        <link rel="stylesheet"  href="assets/css/jquery-ui.css" />
+        <link rel="stylesheet"  href="assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet"  href="assets/css/owl.theme.default.min.css" />
+        <link rel="stylesheet"  href="assets/css/owl.theme.default.min.css" />
+        <link rel="stylesheet"  href="assets/css/jquery.fancybox.min.css" />
+        <link rel="stylesheet"  href="assets/css/bootstrap-datepicker.css" />
+        <link rel="stylesheet"  href="assets/fonts/flaticon/font/flaticon.css" />
+        <link rel="stylesheet"  href="assets/css/aos.css" />
+        <link rel="stylesheet"  href="assets/css/style.css" />
+
         <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
 
       <!-- <link rel="stylesheet" href="css/intlTelInput.css"/> -->
@@ -56,92 +68,78 @@
     <div id="loading">
         <img id="loading-image" src="images/loader/ajax-loader.gif" alt="Loading..." />
     </div>
+          
+            <div class="site-wrap">
+                <div class="site-mobile-menu site-navbar-target">
+                  <div class="site-mobile-menu-header">
+                    <div class="site-mobile-menu-close mt-3">
+                      <span class="icon-close2 js-menu-toggle"></span>
+                    </div>
+                  </div>
+                  <div class="site-mobile-menu-body"></div>
+                </div>
+                <header
+                  class="site-navbar js-sticky-header site-navbar-target"
+                  role="banner"
+                >
+                  <div class="container">
+                    <div class="row align-items-center">
+                      <div class="col-6 col-xl-2 ">
+                        <h1 class="mb-0 site-logo">
+                          <a href="index.html" class="h2 mb-0"
+                            > <img class="logos" src="images/PharmaConnect Logo Main.png" alt="logo"></span>
+                          </a>
+                        </h1>
+                      </div>
+                      <div class="col-12 col-md-10 d-none d-xl-block">
+                        <nav
+                          class="site-navigation position-relative text-right"
+                          role="navigation"
+                        >
+                          <ul
+                            class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block"
+                          >
+                            <li><a href="index.html" class="nav-link">Home</a></li>
+                         
+                            <li class="has-children">
+                                <a href="about.html" class="nav-link">About Us</a>
+                                <ul class="dropdown">
+                                  <li><a href="about.html#convening-board" class="nav-link"> Meet Our Board </a></li>     
+                                </ul>
+                              </li>
 
-    <!-- start header -->
-        <header class="header-with-topbar">
-            <!-- start header top bar -->
-            <div class="header-top-bar top-bar-light bg-white disable-fixed md-border-bottom border-color-transparent-dark-very-light">
-                <div class="container-fluid">
-                    <div class="row h-45px align-items-center m-0">
-                        <div class="col-md-6 text-center text-md-start">
-                            <div class="fs-14 text-dark-gray">Our Pharmaconnect Administration experts waiting for you! <a href="contact.html" class="text-base-color fw-500 text-decoration-line-bottom">Contact now</a></div>
-                        </div>
-                        <div class="col-6 text-end d-none d-md-flex">
-                            <div class="widget fs-14 me-30px md-me-0"><a href="tel:+260 97 3886276" class="text-dark-gray"><i class="feather icon-feather-phone-call text-base-color"></i> +260 97 3886276</a></div>
-                            <div class="widget fs-14 text-dark-gray d-none d-lg-inline-block"><i class="feather icon-feather-mail text-base-color"></i>info@pharmaconnectafrica.com</div>
-                        </div>
+                            <li class="has-children">
+                              <a href="index.html#about-section" class="nav-link">Conferences</a>
+                              <ul class="dropdown">
+                                <li><a href="pharmaconnectAfricaConference2024.html" class="nav-link">Pharmaconnect 2024</a></li>
+                                <li><a href="pharmaconnectAfricaConference2023.html" class="nav-link">Pharmaconnect 2023</a></li>
+                                <li><a href="sponsorus.html" class="nav-link">Sponsor Us</a></li>
+                               
+                              </ul>
+                            </li>
+          
+                            <li class="nav-item"><a href="pharmaconnect-conference-partners.html" class="nav-link">Partners</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link">Contacts</a></li>
+                            <li class="nav-item"><a href="register.php" class="nav-link">Register</a></li>
+                            
+                           
+                        </nav>
+                      </div>
+                      <div
+                        class="col-6 d-inline-block d-xl-none ml-md-0 py-3"
+                        style="position: relative; top: 3px"
+                      >
+                        <a href="#" class="site-menu-toggle js-menu-toggle float-right"
+                          ><span class="icon-menu h3"></span
+                        ></a>
+                      </div>
                     </div>
-                </div>
+                  </div>
+                </header>
             </div>
-            <!-- end header top bar -->
-            <!-- start navigation -->
-            <nav class="navbar navbar-expand-lg header-transparent bg-transparent border-bottom border-color-transparent-white-light disable-fixed">
-                <div class="container-fluid">
-                    <div class="col-auto col-lg-2 me-auto">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/PharmaConnect Logo Main.png" data-at2x="images/PharmaConnect Logo_mobile.png" alt="" class="default-logo">
-                            <img src="images/PharmaConnect Logo Main.png" data-at2x="images/PharmaConnect Logo_mobile.png" alt="" class="alt-logo">
-                            <img src="images/PharmaConnect Logo Main.png" data-at2x="images/PharmaConnect Logo_mobile.png" alt="" class="mobile-logo">
-                        </a>
-                    </div>
-                    <div class="col-auto col-lg-8 menu-order position-static">
-                        <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                            <ul class="navbar-nav alt-font">
-                                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-                                <li class="nav-item dropdown simple-dropdown">
-                                    <a href="#" class="nav-link">Conferences</a>
-                                    <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <li><a href="pharmaconnectAfricaConference2023.html">Pharmaconnect 2023</a></li>
-                                        <li><a href="pharmaconnectAfricaConference2024.html">Pharmaconnect 2024</a></li><!-- 
-                                        <li><a href="pharmaconnectAfricaConference2023.html">Consumer markets</a></li>
-                                        <li><a href="pharmaconnectAfricaConference2023.html">Tax efficiency</a></li> -->
-                                    </ul>
-                                </li>
-                                <!-- <li class="nav-item"><a href="pharmaconnect-conference-process.html" class="nav-link">Process</a></li> -->
-                                <li class="nav-item"><a href="pharmaconnect-conference-partners.html" class="nav-link">Partners</a></li>
-                                <!-- <li class="nav-item"><a href="pharmaconnect-conference-news.html" class="nav-link">News</a></li> -->
-                              <li class="nav-item"><a href="contact.html" class="nav-link">Contacts</a></li>
-                              <li class="nav-item"><a href="register.php" class="nav-link">Register</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-auto col-lg-2 text-end md-pe-0">
-                        <div class="header-icon">
-                            <div class="header-search-icon icon">
-                                <a href="#" class="search-form-icon header-search-form"><i class="feather icon-feather-search"></i></a>
-                                <div class="search-form-wrapper">
-                                    <button title="Close" type="button" class="search-close alt-font">×</button>
-                                    <form id="search-form" role="search" method="get" class="search-form text-left" action="search-result.html">
-                                        <div class="search-form-box">
-                                            <h2 class="text-dark-gray fw-600 ls-minus-1px text-center mb-4 alt-font">What are you looking for?</h2>
-                                            <input class="search-input alt-font" id="search-form-input5e219ef164995" placeholder="Enter your keywords..." name="s" value="" type="text" autocomplete="off">
-                                            <button type="submit" class="search-button">
-                                                <i class="feather icon-feather-search" aria-hidden="true"></i>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="header-push-button icon">
-                                <div class="push-button">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+          
+
+    
             <!-- start push popup -->
             <div class="push-menu push-menu-style-3 p-50px bg-dark-gray">
                 <span class="close-menu text-dark-gray bg-white"><i class="fa-solid fa-xmark"></i></span>
@@ -172,7 +170,7 @@
             <div class="container">
                 <div class="row align-items-center justify-content-center small-screen">
                     <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-small" data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'>
-                        <h1 class="mb-5px alt-font text-white fw-400"><span class="opacity-6">Cant wait to see you.</span></h1>
+                    
                         <h2 class="mb-0 text-white alt-font ls-minus-2px text-shadow-double-large fw-500">Register</h2>
                     </div>
                     <div class="down-section text-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "easing": "easeOutQuad" }'>
@@ -193,18 +191,29 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 text-center mb-2" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
-                        <span class="fw-600 ls-1px fs-16 alt-font d-inline-block text-uppercase mb-5px text-base-color">Quick and Easy Registration!</span>
-                        <h2 class="alt-font text-dark-gray fw-600 ls-minus-2px">Can you tell us about yourself?</h2>
+                        <span class="fw-600 ls-1px fs-20 alt-font d-inline-block text-uppercase mb-5px text-base-color">Registration</span>
+                        <h4 class="alt-font text-dark-gray fw-600 ls-minus-2px">Please complete the form below to register</h4>
                     </div>
                 </div>
                 <div class="row row-cols-md-1 justify-content-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
                     <div class="col-xl-9 col-lg-11">
                         <!-- start contact form -->
                         <form action="email-templates/register.php" method="post" class="row contact-form-style-02  contact-form">
-                            <div class="col-md-2 mb-30px">
-                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="title" name="title" placeholder="Title*" required/>
+                            <div class="col-md-3 mb-30px">
+                                <select class="form-select box-shadow-quadruple-large" id="title" name="title" placeholder="Select Title*" required>
+                                    <option value="">Select Title</option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Mrs">Mrs</option>
+                                    <option value="Ms">Ms</option>
+                                    <option value="Dr">Dr</option>
+                                    <option value="Prof">Prof</option>
+                                    <option value="Pharm">Pharm</option>
+                                    <option value="None">None</option>
+                                </select>
+
                             </div>
-                            <div class="col-md-5 mb-30px">
+
+                            <div class="col-md-4 mb-30px">
                                 <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="familyname" name="familyname" placeholder="Family Name*" required/>
                             </div>
                             <div class="col-md-5 mb-30px">
@@ -243,7 +252,9 @@
                                 <textarea class="box-shadow-quadruple-large form-control" cols="40" rows="4" id="comment" name="comment" placeholder="Anything else you would like to share"></textarea>
                             </div>
                             <div class="col-md-7 last-paragraph-no-margin">
-                                <p class="text-center text-md-start fs-16">We are committed to protecting your privacy. We will never collect information about you without your explicit consent.</p>
+                                <p class="text-center text-md-start fs-16">
+                                    We are committed to protecting your privacy. By completing this form, you consent to us collecting your personal information. We assure you that your information will not be shared with third parties and will be handled with the highest standards of confidentiality and security.
+                                </p>
                             </div>
                             <div class="col-md-5 text-center text-md-end sm-mt-20px">
                                 <input type="hidden" name="redirect" value="">
@@ -354,6 +365,22 @@
         <script type="text/javascript" src="js/vendors.min.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
+
+        <script  src="assets/js/jquery-3.3.1.min.js"  ></script>
+        <script  src="assets/js/jquery-ui.js"  ></script>
+        <script  src="assets/js/popper.min.js"  ></script>
+        <script  src="assets/js/bootstrap.min.js"  ></script>
+        <script  src="assets/js/owl.carousel.min.js"  ></script>
+        <script  src="assets/js/jquery.countdown.min.js"  ></script>
+        <script  src="assets/js/jquery.easing.1.3.js"  ></script>
+        <script  src="assets/js/aos.js" ></script>
+        <script  src="assets/js/jquery.fancybox.min.js" ></script>
+        <script  src="assets/js/jquery.sticky.js"  ></script> 
+        <script  src="assets/js/isotope.pkgd.min.js"  ></script>
+        <script  src="assets/js/main.js" ></script>
+        <script  src="assets/js/feather.min.js"></script>
+        <script  src="assets/js/social.js"></script>
 
 
         <!-- Sweetalert 2 -->
