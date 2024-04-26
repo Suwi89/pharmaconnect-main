@@ -191,15 +191,15 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 text-center mb-2" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
-                        <span class="fw-600 ls-1px fs-20 alt-font d-inline-block text-uppercase mb-5px text-base-color">Registration</span>
-                        <h4 class="alt-font text-dark-gray fw-600 ls-minus-2px">Please complete the form below to register</h4>
+                        <span class="fw-600 ls-1px fs-20 alt-font d-inline-block text-uppercase mb-5px text-base-color">Abstract </span>
+                        <h4 class="alt-font text-dark-gray fw-600 ls-minus-2px">Please complete the form abstract below </h4>
                     </div>
                 </div>
                 <div class="row row-cols-md-1 justify-content-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
                     <div class="col-xl-9 col-lg-11">
                         <!-- start contact form -->
                         <form action="email-templates/register.php" method="post" class="row contact-form-style-02  contact-form">
-                            <div class="col-md-3 mb-30px">
+                            <div class="col-md-3 col-lg-3 mb-30px">
                                 <select class="form-select box-shadow-quadruple-large" id="title" name="title" placeholder="Select Title*" required>
                                     <option value="">Select Title</option>
                                     <option value="Mr">Mr</option>
@@ -219,23 +219,25 @@
                             <div class="col-md-5 mb-30px">
                                 <input class="box-shadow-quadruple-large form-control required" type="text" id="name" name="name" placeholder="First Name*" required />
                             </div>
+                            <div class="col-md-6 mb-30px">
+                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="position" name="position" placeholder="Position*" required/>
+                            </div>
+                            <div class="col-md-6 mb-30px">
+                                <input class="box-shadow-quadruple-large form-control required" type="text" id="institution" name="institution" placeholder="Institution*" required />
+                            </div>
                             <div class="col-md-6 mb-30px" >
-                                <input class="box-shadow-quadruple-large form-control" type="text" id="organisation" name="organisation" placeholder="Organisation" required/>
+                                <input class="box-shadow-quadruple-large form-control" type="text" id="department" name="department" placeholder="Department" required/>
 
                             </div>
                             <div class="col-md-6 mb-30px">
                                 <input class="box-shadow-quadruple-large form-control" type="text" id="address" name="address" placeholder="Address" required/>
                             </div>
 
-                            <div class="col-md-4 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control" type="text" id="postal-code" name="postal-code" placeholder="Postal Code"required />
-                            </div>
-
-                            <div class="col-md-4 mb-30px">
+                            <div class="col-md-6 mb-30px">
                                 <input class="box-shadow-quadruple-large form-control" type="text" id="city" name="city" placeholder="City" required/>
                             </div>
 
-                            <div class="col-md-4 mb-30px">
+                            <div class="col-md-6 mb-30px">
                                 <input class="box-shadow-quadruple-large form-control" type="text" id="country" name="country" placeholder="Country" required/>
                             </div>
 
@@ -243,11 +245,25 @@
                                 <!-- <input class="box-shadow-quadruple-large form-control" type="tel" name="phone" placeholder="Your phone" /> -->
                                 <input  class="box-shadow-quadruple-large form-control"  name="phone" type="text" id="phone" placeholder="Your phone" required/>
                             </div>
+
                             <div class="col-md-6 mb-30px">
                                 <input class="box-shadow-quadruple-large form-control" type="text" id="email" name="email" placeholder="Your Email" required/>
                             </div>
+                                              <div class="col-md-6 mb-30px">
+                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="abstracttitle" name="abstracttitle" placeholder="Abstract Title*" required/>
+                            </div>
+                            
+                            <div class="col-md-6 mb-30px">
+                                <select class="form-select box-shadow-quadruple-large" id="submissiontype" name="submissiontype" placeholder="Preferred submission type*" required>
+                                    <option value="">Select Title</option>
+                                    <option value="Oral Presentation">Oral Presentation (strictly 12 min)</option>
+                                    <option value="Poster Presentation">Poster Presentation (A2 size)</option>
+                                </select>
+
+                            </div>
+                           
                             <div class="col-md-12 mb-30px">
-                                <textarea class="box-shadow-quadruple-large form-control" cols="40" rows="4" id="comment" name="comment" placeholder="Anything else you would like to share"></textarea>
+                                <textarea class="form-control" rows="4" id="abstract " name="abstract " placeholder="Abstract "></textarea>
                             </div>
                             <div class="col-md-7 last-paragraph-no-margin">
                                 <p class="text-center text-md-start fs-16">
