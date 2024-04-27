@@ -12,11 +12,11 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Extract user data from the request
     $title = $_POST['title'];
-    $last_name = $_POST['last_name'];
-    $first_name = $_POST['first_name'];
+    $last_name = $_POST['familyname'];
+    $first_name = $_POST['name'];
     $organisation = $_POST['organisation'];
     $address = $_POST['address'];
-    $postal_code = $_POST['postal_code'];
+    $postal_code = $_POST['postal-code'];
     $city = $_POST['city'];
     $country = $_POST['country'];
     $phone = $_POST['phone'];
@@ -46,7 +46,7 @@ function send_email_with_userdata($title, $last_name, $first_name, $organisation
     // Configure email settings (SMTP server, sender, recipients, etc.)
     $to_admin = 'cathbertbusiku@gmail.com, aaronmwelwa@gmail.com'; // Email address of the administrator
     $to_user = $email; // User's email address
-    $subject_admin = '🎉 New Registration Alert! 🎉'; 
+    $subject_admin = '🎉 New Registration Alert! 🎉';
     
     // Message for admin email
     $message_admin = "Dear Admin,\n\n";
@@ -65,9 +65,10 @@ function send_email_with_userdata($title, $last_name, $first_name, $organisation
     $message_admin .= "Other Details: $other_details\n";
 
     // Message for user email
-    $e_subject = 'PHARMACONNECT REGISTRATION';
-    $e_body = "Congratulations, $first_name! You have successfully registered for the 2024 Pharmaconnect." . PHP_EOL . PHP_EOL;
-    $e_content = "We look forward to seeing you." . PHP_EOL . PHP_EOL;
+    $e_subject = '🎉 Congratulations on Your Registration! 🎉';
+    $e_body = "Dear $first_name,\n\n";
+    $e_body .= "Congratulations! You have successfully registered for the 2024 Pharmaconnect.\n\n";
+    $e_content = "We look forward to seeing you.\n\n";
     $e_reply = "You can contact us for any further clarifications via email, info@pharmaconnectafrica.com.";
     $msg = wordwrap($e_body . $e_content . $e_reply, 70);
 
@@ -77,7 +78,6 @@ function send_email_with_userdata($title, $last_name, $first_name, $organisation
     // Send emails to admin and user
     mail($to_admin, $subject_admin, $message_admin, $headers);
     mail($to_user, $e_subject, $msg, $headers);
-
 }
 
 $conn->close();

@@ -198,7 +198,7 @@
                 <div class="row row-cols-md-1 justify-content-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
                     <div class="col-xl-9 col-lg-11">
                         <!-- start contact form -->
-                        <form action="email-templates/abstract.php" method="post" class="row contact-form-style-02  contact-form">
+                        <form action="email-templates/abstract.php" method="post" class="row contact-form-style-02  ">
                             <div class="col-md-3 col-lg-3 mb-30px">
                                 <select class="form-select box-shadow-quadruple-large" id="title" name="title" placeholder="Select Title*" required>
                                     <option value="">Select Title</option>
