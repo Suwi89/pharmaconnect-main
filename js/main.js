@@ -3723,6 +3723,24 @@ function initMap() {
     {if($('#subscribe-popup').length>0){let delaySecond=1.5,expireDays=30,cookieName='crafto-promo-popup';if(getCookie(cookieName)!='shown'){setTimeout(function(){$.magnificPopup.open({showCloseBtn:false,items:{src:'#subscribe-popup'},type:'inline',mainClass:'my-mfp-zoom-in',callbacks:{close:function(){if($('#newsletter-off').is(':checked')){setCookie(cookieName,'shown',expireDays);}}}});},(delaySecond*3500));}}}
 }
 
+function checkWordCount(textarea) {
+    var maxLength = 300;
+    var words = textarea.value.trim().split(/\s+/);
+    var wordCount = words.length;
+    if (wordCount > maxLength) {
+        // Truncate excess words
+        words.splice(maxLength);
+        textarea.value = words.join(" ");
+        wordCount = maxLength;
+    }
+    if (textarea.value.trim() !== "") {
+        document.getElementById('wordCount').style.display = 'block';
+        document.getElementById('wordCount').innerText = wordCount + ' word(s)';
+    } else {
+        document.getElementById('wordCount').style.display = 'none';
+    }
+}
+
 $('.contact-form').each(function() {
     var formInstance = $(this);
     formInstance.submit(function() {

@@ -19286,5 +19286,10 @@ footer .footer-navbar .nav-item:last-child a {
   color: white !important; /* Change text color to ensure readability */
 }
 
+.text-count{
+  color: red;
+  font-size: 16px;
+}
+
 
 

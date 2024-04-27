@@ -164,26 +164,7 @@
             <!-- end push popup -->
         </header>
         <!-- end header -->
-        <!-- start page title -->
-        <section class="page-title-big-typography bg-dark-gray ipad-top-space-margin xs-py-0" data-parallax-background-ratio="0.5" style="background-image: url(images/female-doc-register2.jpg)">
-            <div class="opacity-light bg-dark-gray"></div>
-            <div class="container">
-                <div class="row align-items-center justify-content-center small-screen">
-                    <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-small" data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    
-                        <h2 class="mb-0 text-white alt-font ls-minus-2px text-shadow-double-large fw-500">Abstract</h2>
-                    </div>
-                    <div class="down-section text-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "easing": "easeOutQuad" }'>
-                        <a href="#down-section" class="section-link">
-                            <div class="fs-30 sm-fs-32 text-white">
-                                <i class="bi bi-mouse"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end page title -->
+       
 
 
         <!-- start section -->
@@ -191,104 +172,20 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 text-center mb-2" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
-                        <span class="fw-600 ls-1px fs-20 alt-font d-inline-block text-uppercase mb-5px text-base-color">Abstract </span>
-                        <h4 class="alt-font text-dark-gray fw-600 ls-minus-2px">Please complete the abstract form below</h4>
+                        <span class="fw-600 ls-1px fs-20 alt-font d-inline-block text-uppercase mb-5px text-base-color">Thank You for Your Abstract Submission!</span>
+                       
                     </div>
                 </div>
                 <div class="row row-cols-md-1 justify-content-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
-                    <div class="col-xl-9 col-lg-11">
-                        <!-- start contact form -->
-                        <form action="email-templates/abstract.php" method="post" class="row contact-form-style-02  contact-form">
-                            <div class="col-md-3 col-lg-3 mb-30px">
-                                <select class="form-select box-shadow-quadruple-large" id="title" name="title" placeholder="Select Title*" required>
-                                    <option value="">Select Title</option>
-                                    <option value="Mr">Mr</option>
-                                    <option value="Mrs">Mrs</option>
-                                    <option value="Ms">Ms</option>
-                                    <option value="Dr">Dr</option>
-                                    <option value="Prof">Prof</option>
-                                    <option value="Pharm">Pharm</option>
-                                    <option value="None">None</option>
-                                </select>
+                   <p class="justify-p">
+                      We appreciate your interest in contributing to PharmaConnect Africa Conference 2024. Your abstract has been successfully received. We are reviewing all submissions carefully, and you will be notified about the status of your abstract by <span class="bolder">30 June 2024.</span> 
 
-                            </div>
+                   <p class="justify-p">
+                      Thank you again for your valuable contribution. We look forward to the possibility of featuring your work at the conference.
+                   </p>
 
-                            <div class="col-md-4 mb-30px">
-                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="last_name" name="last_name" placeholder="Last Name*" required/>
-                            </div>
-                            <div class="col-md-5 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control required" type="text" id="first_name" name="first_name" placeholder="First Name*" required />
-                            </div>
-                            <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="position" name="position" placeholder="Position*" required/>
-                            </div>
-                            <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control required" type="text" id="institution" name="institution" placeholder="Institution*" required />
-                            </div>
-                            <div class="col-md-6 mb-30px" >
-                                <input class="box-shadow-quadruple-large form-control" type="text" id="department" name="department" placeholder="Department" required/>
+                   
 
-                            </div>
-                            <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control" type="text" id="address" name="address" placeholder="Address" required/>
-                            </div>
-
-                            <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control" type="text" id="city" name="city" placeholder="City" required/>
-                            </div>
-
-                            <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control" type="text" id="country" name="country" placeholder="Country" required/>
-                            </div>
-
-                            <div class="col-md-6 mb-30px" >
-                                <!-- <input class="box-shadow-quadruple-large form-control" type="tel" name="phone" placeholder="Your phone" /> -->
-                                <input  class="box-shadow-quadruple-large form-control"  name="phone" type="text" id="phone" placeholder="Your phone" required/>
-                            </div>
-
-                            <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control" type="text" id="email" name="email" placeholder="Your Email" required/>
-                            </div>
-                                              <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="abstracttitle" name="abstracttitle" placeholder="Abstract Title*" required/>
-                            </div>
-                            
-                            <div class="col-md-6 mb-30px">
-                                <select class="form-select box-shadow-quadruple-large" id="submissiontype" name="submissiontype" placeholder="Preferred submission type*" required>
-                                    <option value="">Select Title</option>
-                                    <option value="Oral Presentation">Oral Presentation (strictly 12 min)</option>
-                                    <option value="Poster Presentation">Poster Presentation (A2 size)</option>
-                                </select>
-
-                            </div>
-                           
-                            <div class="col-md-12 mb-30px">
-                                <textarea class="form-control" cols="40" rows="4" id="abstract" name="abstract" placeholder="Abstract (300 words only)" oninput="checkWordCount(this)"></textarea>
-                                <p id="wordCount" class="text-count" style="display: none;">0 words</p>
-                            </div>
-
-                            <div class="col-md-12 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control required" type="text" id="keywords" name="keywords" placeholder="Key words (5)" required />
-                            </div>
-
-                            <div class="col-md-7 last-paragraph-no-margin">
-                                <p class="text-center text-md-start fs-16">
-                                    We are committed to protecting your privacy. By completing this form, you consent to us collecting your personal information. We assure you that your information will not be shared with third parties and will be handled with the highest standards of confidentiality and security.
-                                </p>
-                            </div>
-                            <div class="col-md-5 text-center text-md-end sm-mt-20px">
-                                <input type="hidden" name="redirect" value="">
-                                <button class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge " name="submit" id="submit" style="background-color:	#FF7417;" type="submit">Submit</button>
-                            </div>
-                            <div class="col-lg-12 alert-notification"  style="height: 80px; ">
-                                  <div id="message" class="alert-msg"></div>
-                              </div>
-                            <div class="col-12">
-                                <div class="form-results mt-20px d-none"></div>
-                            </div>
-                        </form>
-                        <!-- end contact form -->
-                    </div>
                 </div>
             </div>
         </section>

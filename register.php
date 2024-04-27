@@ -198,7 +198,7 @@
                 <div class="row row-cols-md-1 justify-content-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
                     <div class="col-xl-9 col-lg-11">
                         <!-- start contact form -->
-                        <form action="email-templates/register.php" method="post" class="row contact-form-style-02  contact-form">
+                        <form action="email-templates/register-test.php" method="post" class="row contact-form-style-02  contact-form">
                             <div class="col-md-3 mb-30px">
                                 <select class="form-select box-shadow-quadruple-large" id="title" name="title" placeholder="Select Title*" required>
                                     <option value="">Select Title</option>
@@ -214,10 +214,10 @@
                             </div>
 
                             <div class="col-md-4 mb-30px">
-                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="familyname" name="familyname" placeholder="Family Name*" required/>
+                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="last_name" name="last_name" placeholder="Last Name*" required/>
                             </div>
                             <div class="col-md-5 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control required" type="text" id="name" name="name" placeholder="First Name*" required />
+                                <input class="box-shadow-quadruple-large form-control required" type="text" id="first_name" name="first_name" placeholder="First Name*" required />
                             </div>
                             <div class="col-md-6 mb-30px" >
                                 <input class="box-shadow-quadruple-large form-control" type="text" id="organisation" name="organisation" placeholder="Organisation" required/>

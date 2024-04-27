@@ -14,59 +14,68 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $title = $_POST['title'];
     $last_name = $_POST['last_name'];
     $first_name = $_POST['first_name'];
-    $organisation = $_POST['organisation'];
+    $position = $_POST['position'];
+    $institution = $_POST['institution'];
+    $department = $_POST['department'];
     $address = $_POST['address'];
-    $postal_code = $_POST['postal_code'];
     $city = $_POST['city'];
     $country = $_POST['country'];
     $phone = $_POST['phone'];
     $email = $_POST['email'];
+    $abstracttitle = $_POST['abstracttitle'];
+    $submissiontype = $_POST['submissiontype'];
+    $abstract = $_POST['abstract'];
+    $keywords = $_POST['keywords'];
     $status = "submited";
-    $other_details = $_POST['comment'];
-
+  
     // Prepare and execute SQL statement to insert user data into the database
-    $stmt = $conn->prepare("INSERT INTO test_registration (title, last_name, first_name, organisation, address, 
-                           postal_code, city, country, phone, email, status, other_details) 
-                           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("ssssssssssss", $title, $last_name, $first_name, $organisation, $address, 
-                      $postal_code, $city, $country, $phone, $email, $status, $other_details);
+    $stmt = $conn->prepare("INSERT INTO abstract (title, last_name, first_name, position, institution,
+                            department, address, city, country, phone, email, abstracttitle, submissiontype, abstract, keywords, status ) 
+                           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+
+    $stmt->bind_param("ssssssssssssssss", $title, $last_name, $first_name, $position, $institution, 
+                      $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status);
     if ($stmt->execute()) {
         // Send email with user data
-        send_email_with_userdata($title, $last_name, $first_name, $organisation, $address, 
-                                 $postal_code, $city, $country, $phone, $email, $status, $other_details);
-        header("Location: register-success.php");
+        send_email_with_userdata($title, $last_name, $first_name, $position, $institution, 
+                                 $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status);
+        header("Location: abstract-success.php");
         exit;
     } else {
         echo "Error: " . $stmt->error;
     }
 }
 
-function send_email_with_userdata($title, $last_name, $first_name, $organisation, $address, 
-                                  $postal_code, $city, $country, $phone, $email, $status, $other_details) {
+function send_email_with_userdata($title, $last_name, $first_name, $position, $institution, 
+                                  $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status) {
     // Configure email settings (SMTP server, sender, recipients, etc.)
     $to_admin = 'cathbertbusiku@gmail.com, aaronmwelwa@gmail.com'; // Email address of the administrator
     $to_user = $email; // User's email address
-    $subject_admin = '🎉 New Registration Alert! 🎉'; 
+    $subject_admin = 'Abstract Submission'; 
     
     // Message for admin email
     $message_admin = "Dear Admin,\n\n";
-    $message_admin .= "A new user has just registered:\n\n";
+    $message_admin .= "$first_name $last_name has just submitted their abstract:\n\n";
     $message_admin .= "Title: $title\n";
     $message_admin .= "Last Name: $last_name\n";
     $message_admin .= "First Name: $first_name\n";
-    $message_admin .= "Organisation: $organisation\n";
+    $message_admin .= "Position: $position\n";
+    $message_admin .= "Institution: $institution\n";
+    $message_admin .= "Department: $department\n";
     $message_admin .= "Address: $address\n";
-    $message_admin .= "Postal Code: $postal_code\n";
     $message_admin .= "City: $city\n";
     $message_admin .= "Country: $country\n";
     $message_admin .= "Phone: $phone\n";
     $message_admin .= "Email: $email\n";
+    $message_admin .= "Abstract Title: $abstracttitle\n";
+    $message_admin .= "Submission Type: $submissiontype\n";
+    $message_admin .= "Abstract: $abstract\n";
+    $message_admin .= "Keywords: $keywords\n";
     $message_admin .= "Status: $status\n";
-    $message_admin .= "Other Details: $other_details\n";
 
     // Message for user email
     $e_subject = 'PHARMACONNECT REGISTRATION';
-    $e_body = "Congratulations, $first_name! You have successfully registered for the 2024 Pharmaconnect." . PHP_EOL . PHP_EOL;
+    $e_body = "Congratulations, $first_name! You have successfully sumbited your abstract for the 2024 Pharmaconnect." . PHP_EOL . PHP_EOL;
     $e_content = "We look forward to seeing you." . PHP_EOL . PHP_EOL;
     $e_reply = "You can contact us for any further clarifications via email, info@pharmaconnectafrica.com.";
     $msg = wordwrap($e_body . $e_content . $e_reply, 70);
@@ -79,6 +88,7 @@ function send_email_with_userdata($title, $last_name, $first_name, $organisation
     mail($to_user, $e_subject, $msg, $headers);
 
 }
+
 
 $conn->close();
 ?>
