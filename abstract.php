@@ -262,10 +262,16 @@
 
                             </div>
                            
+                            <!-- <div class="col-md-12 mb-30px">
+                                <textarea class="form-control" cols="40" rows="40" id="abstract" name="abstract" placeholder="Abstract (300 words only)" oninput="checkWordCount(this)"></textarea>
+                                <p id="wordCount" class="text-count" style="display: none;">0 words</p>
+                            </div> -->
+
                             <div class="col-md-12 mb-30px">
-                                <textarea class="form-control" cols="40" rows="4" id="abstract" name="abstract" placeholder="Abstract (300 words only)" oninput="checkWordCount(this)"></textarea>
+                                <textarea class="form-control" cols="50" rows="10" id="abstract" name="abstract" placeholder="Abstract (300 words only)" oninput="checkWordCount(this)"></textarea>
                                 <p id="wordCount" class="text-count" style="display: none;">0 words</p>
                             </div>
+
 
                             <div class="col-md-12 mb-30px">
                                 <input class="box-shadow-quadruple-large form-control required" type="text" id="keywords" name="keywords" placeholder="Key words (5)" required />
