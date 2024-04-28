@@ -3741,6 +3741,25 @@ function checkWordCount(textarea) {
     }
 }
 
+
+// Get all elements with the class 'equal-height-col'
+const columns = document.querySelectorAll('.equal-height-col');
+
+// Find the maximum height
+let maxHeight = 0;
+columns.forEach(column => {
+    const height = column.offsetHeight;
+    if (height > maxHeight) {
+        maxHeight = height;
+    }
+});
+
+// Set all columns to the maximum height
+columns.forEach(column => {
+    column.style.height = `${maxHeight}px`;
+});
+
+
 $('.contact-form').each(function() {
     var formInstance = $(this);
     formInstance.submit(function() {

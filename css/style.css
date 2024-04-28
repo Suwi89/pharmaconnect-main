@@ -19291,5 +19291,67 @@ footer .footer-navbar .nav-item:last-child a {
   font-size: 16px;
 }
 
+.home-page-icon-boxes {
+    padding: 96px 0;
+}
+
+
+
+.icon-box {
+  padding: 40px;
+  border-radius: 24px;
+  background: #ecf2f5;
+  text-align: center;
+  transition: all .35s;
+}
+
+.icon-box:hover,
+.icon-box.active {
+  border: 0;
+  background: -moz-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,90,0,1)), color-stop(100%, rgba(1255,54,0,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* ie10+ */
+  background: linear-gradient(270deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a00', endColorstr='#ff3600',GradientType=1 ); /* ie6-9 */
+  color: #fff;
+}
+
+
+
+.icon-box .entry-title {
+  margin-top: 28px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #262626;
+}
+
+.icon-box:hover .entry-title,
+.icon-box.active .entry-title {
+  color: #fff;
+}
+
+.icon-box .entry-content {
+  margin-top: 24px;
+}
+
+.icon-box .entry-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #595858;
+}
+
+.icon-box:hover .entry-content p,
+.icon-box.active .entry-content p {
+  color: #fff;
+}
+
+.home-page-welcome img {
+  display: block;
+  width: 100%;
+}
+
+
 
 
