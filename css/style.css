@@ -19306,15 +19306,9 @@ footer .footer-navbar .nav-item:last-child a {
 }
 
 .icon-box:hover,
-.icon-box.active {
+.icon-box.actives {
   border: 0;
-  background: -moz-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,90,0,1)), color-stop(100%, rgba(1255,54,0,1))); /* safari4+,chrome */
-  background: -webkit-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(180deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* ie10+ */
-  background: linear-gradient(270deg, rgba(255,90,0,1) 0%, rgba(255,54,0,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5a00', endColorstr='#ff3600',GradientType=1 ); /* ie6-9 */
+  background: #dd6531; /* Set the hover and active background color */
   color: #fff;
 }
 
@@ -19338,7 +19332,7 @@ footer .footer-navbar .nav-item:last-child a {
 
 .icon-box .entry-content p {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #595858;
 }
 
@@ -19352,6 +19346,20 @@ footer .footer-navbar .nav-item:last-child a {
   width: 100%;
 }
 
+
+.equal-height-rows {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.equal-height-rows > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.equal-height-rows .icon-box {
+  flex-grow: 1;
+}
 
 
 
