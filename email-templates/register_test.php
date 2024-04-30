@@ -71,11 +71,15 @@ function send_email_with_userdata($registration_type, $title, $last_name, $first
     $e_body = "Dear $first_name,\n\n";
     $e_body .= "Congratulations! You have successfully registered for PharmaConnect Africa Conference 2024. We are thrilled to have you join us and look forward to your participation.\n\n";
     $e_payment_header = "Invoice and Payment Information:\n";
-    $e_payment_detail = " Shortly, you will receive an invoice for your registration. Please note that we do not currently offer an online payment system. If you have registered before 21 June 2024, to benefit from our reduced early bird rate, you will need to initiate payment before
+    $e_payment_detail = "Shortly, you will receive an invoice for your registration. Please note that we do not currently offer an online payment system. If you have registered before 21 June 2024, to benefit from our reduced early bird rate, you will need to initiate payment before
                         this date. Payments initiated after June 21 but before August 18 will be subject to the standard rate. Any payments received thereafter will be processed at the on-site registration rate.
                         \n\n";
     $e_reply = "Should you need any further information or have any questions, please feel free to contact us at info@pharmaconnectafrica.com.";
-    $msg = wordwrap($e_body . $e_payment_header . $e_payment_detail . $e_reply, 70);
+
+    $e_regards = "Warm Regards," . PHP_EOL . PHP_EOL;
+    $e_footer = "Mandi Ramshaw ". PHP_EOL;
+    $e_team = "PharmaConnect Africa Conference 2024 Team info@pharmaconnectafrica.com";
+    $msg = wordwrap($e_body . $e_payment_header . $e_payment_detail . $e_reply . $e_regards . $e_footer . $e_team, 70);
 
     $headers = "From: info@pharmaconnectafrica.com\r\n";
     $headers .= "Reply-To: info@pharmaconnectafrica.com\r\n";

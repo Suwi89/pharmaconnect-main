@@ -11,6 +11,7 @@ if ($conn->connect_error) {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Extract user data from the request
+    $abstract_theme = $_POST['abstract_theme'];
     $title = $_POST['title'];
     $last_name = $_POST['last_name'];
     $first_name = $_POST['first_name'];
@@ -29,15 +30,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $status = "submited";
   
     // Prepare and execute SQL statement to insert user data into the database
-    $stmt = $conn->prepare("INSERT INTO abstract (title, last_name, first_name, position, institution,
+    $stmt = $conn->prepare("INSERT INTO abstract (abstract_theme, title, last_name, first_name, position, institution,
                             department, address, city, country, phone, email, abstracttitle, submissiontype, abstract, keywords, status ) 
-                           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-    $stmt->bind_param("ssssssssssssssss", $title, $last_name, $first_name, $position, $institution, 
+    $stmt->bind_param("sssssssssssssssss", $abstract_theme, $title, $last_name, $first_name, $position, $institution, 
                       $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status);
     if ($stmt->execute()) {
         // Send email with user data
-        send_email_with_userdata($title, $last_name, $first_name, $position, $institution, 
+        send_email_with_userdata($abstract_theme, $title, $last_name, $first_name, $position, $institution, 
                                  $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status);
         header("Location: abstract-success.php");
         exit;
@@ -46,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-function send_email_with_userdata($title, $last_name, $first_name, $position, $institution, 
+function send_email_with_userdata($abstract_theme, $title, $last_name, $first_name, $position, $institution, 
                                   $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status) {
     // Configure email settings (SMTP server, sender, recipients, etc.)
     $to_admin = 'cathbertbusiku@gmail.com, aaronmwelwa@gmail.com'; // Email address of the administrator
@@ -56,6 +57,7 @@ function send_email_with_userdata($title, $last_name, $first_name, $position, $i
     // Message for admin email
     $message_admin = "Dear Admin,\n\n";
     $message_admin .= "$first_name $last_name has just submitted their abstract:\n\n";
+    $message_admin .= "Abstract Theme: $$abstract_theme\n";
     $message_admin .= "Title: $title\n";
     $message_admin .= "Last Name: $last_name\n";
     $message_admin .= "First Name: $first_name\n";
@@ -74,11 +76,15 @@ function send_email_with_userdata($title, $last_name, $first_name, $position, $i
     $message_admin .= "Status: $status\n";
 
     // Message for user email
-    $e_subject = 'PHARMACONNECT REGISTRATION';
-    $e_body = "Congratulations, $first_name! You have successfully sumbited your abstract for the 2024 Pharmaconnect." . PHP_EOL . PHP_EOL;
-    $e_content = "We look forward to seeing you." . PHP_EOL . PHP_EOL;
-    $e_reply = "You can contact us for any further clarifications via email, info@pharmaconnectafrica.com.";
-    $msg = wordwrap($e_body . $e_content . $e_reply, 70);
+    $e_subject = 'Confirmation of your abstract submission for PharmaConnect Africa Conference 2024';
+    $e_body = "Congratulations! You have successfully submitted your abstract for PharmaConnect Africa Conference 2024. We appreciate your contribution and look forward to potentially including it in our conference program." . PHP_EOL . PHP_EOL;
+    $e_content = "Please note that you will be informed about the acceptance of your abstract by 14 June 2024. Should your abstract be accepted, we encourage you to register for the conference as soon as possible to take advantage of our early bird rate, which is available until 21 June 2024." . PHP_EOL . PHP_EOL;
+    $e_reply = "Should you need any further information or have any questions regarding your submission or the registration process, please feel free to contact us at info@pharmaconnectafrica.com.". PHP_EOL . PHP_EOL;
+    $e_end = "We are excited about your interest in the PharmaConnect Conference 2024 and eagerly anticipate your participation.". PHP_EOL . PHP_EOL;
+    $e_regards = "Warm Regards," . PHP_EOL . PHP_EOL;
+    $e_footer = "Mandi Ramshaw ". PHP_EOL;
+    $e_team = "PharmaConnect Africa Conference 2024 Team info@pharmaconnectafrica.com";
+    $msg = wordwrap($e_body . $e_content . $e_reply . $e_end . $e_regards . $e_footer . $e_team, 70);
 
     $headers = "From: info@pharmaconnectafrica.com\r\n";
     $headers .= "Reply-To: info@pharmaconnectafrica.com\r\n";
