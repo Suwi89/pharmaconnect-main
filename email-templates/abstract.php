@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 function send_email_with_userdata($abstract_theme, $title, $last_name, $first_name, $position, $institution, 
                                   $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status) {
     // Configure email settings (SMTP server, sender, recipients, etc.)
-    $to_admin = 'cathbertbusiku@gmail.com, aaronmwelwa@gmail.com'; // Email address of the administrator
+    $to_admin = 'cathbertbusiku@gmail.com, aaronmwelwa@gmail.com, mramshaw@pharmasystafrica.com'; // Email address of the administrator
     $to_user = $email; // User's email address
     $subject_admin = 'Abstract Submission'; 
     

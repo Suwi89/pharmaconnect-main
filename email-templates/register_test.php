@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 function send_email_with_userdata($registration_type, $title, $last_name, $first_name, $organisation, $address, 
                                   $postal_code, $city, $country, $phone, $email, $status, $other_details) {
     // Configure email settings (SMTP server, sender, recipients, etc.)
-    $to_admin = 'cathbertbusiku@gmail.com, aaronmwelwa@gmail.com'; // Email address of the administrator
+    $to_admin = 'cathbertbusiku@gmail.com, aaronmwelwa@gmail.com, mramshaw@pharmasystafrica.com'; // Email address of the administrator
     $to_user = $email; // User's email address
     $subject_admin = '🎉 New Registration Alert! 🎉';
     
