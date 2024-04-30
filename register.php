@@ -191,8 +191,12 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 text-center mb-2" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
-                        <span class="fw-600 ls-1px fs-20 alt-font d-inline-block text-uppercase mb-5px text-base-color">Registration</span>
-                        <h4 class="alt-font text-dark-gray fw-600 ls-minus-2px">Please complete the form below to register</h4>
+                        <span class="fw-600 ls-1px fs-20 alt-font d-inline-block text-uppercase mb-5px text-base-color">Register for PharmaConnect Africa Conference 2024</span>
+                        <h5 class="alt-font text-dark-gray fw-600 ls-minus-2px">Complete the registration form below to join us at PCA 2024. </h5>
+                        <p class="justify-p"> 
+                            If you have any questions regarding the registration process or payment, please do not hesitate to contact us at <span class="text-primary"> info@pharmaconnectafrica.org </span>. 
+                            We are here to assist you! 
+                        </p>
                     </div>
                 </div>
                 <div class="row row-cols-md-1 justify-content-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
