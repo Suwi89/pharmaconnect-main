@@ -203,7 +203,17 @@
                     <div class="col-xl-9 col-lg-11">
                         <!-- start contact form -->
                         <form action="email-templates/register-test.php" method="post" class="row contact-form-style-02  ">
-                            <div class="col-md-3 mb-30px">
+                            <div class="col-md-6 mb-30px">
+                                <select class="form-select box-shadow-quadruple-large" id="registration_type" name="registration_type" placeholder="Select Registration Type*" required>
+                                    <option value="">Select Registration Type</option>
+                                    <option value="Early bird">Early bird</option>
+                                    <option value="Standard">Standard</option>
+                                    <option value="Intern/post-grad">Intern/post-grad</option>
+                                    <option value="Student">Student</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 mb-30px">
                                 <select class="form-select box-shadow-quadruple-large" id="title" name="title" placeholder="Select Title*" required>
                                     <option value="">Select Title</option>
                                     <option value="Mr">Mr</option>
@@ -217,10 +227,10 @@
 
                             </div>
 
-                            <div class="col-md-4 mb-30px">
+                            <div class="col-md-6 mb-30px">
                                 <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="last_name" name="last_name" placeholder="Last Name*" required/>
                             </div>
-                            <div class="col-md-5 mb-30px">
+                            <div class="col-md-6 mb-30px">
                                 <input class="box-shadow-quadruple-large form-control required" type="text" id="first_name" name="first_name" placeholder="First Name*" required />
                             </div>
                             <div class="col-md-6 mb-30px" >
