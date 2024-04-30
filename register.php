@@ -228,7 +228,7 @@
                             </div>
 
                             <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="last_name" name="last_name" placeholder="Last Name*" required/>
+                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="familyname" name="familyname" placeholder="Last Name*" required/>
                             </div>
                             <div class="col-md-6 mb-30px">
                                 <input class="box-shadow-quadruple-large form-control required" type="text" id="first_name" name="first_name" placeholder="First Name*" required />
