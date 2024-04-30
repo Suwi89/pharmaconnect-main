@@ -182,7 +182,7 @@
                    </p>
 
                    <p class="justify-p">
-                        To benefit from our discounted early bird rate, ensure that your payment is received before the deadline on 30 June 2024. This will secure your spot at the conference at the reduced price.
+                        To benefit from our discounted early bird rate, ensure that your payment is received before the deadline on <span class="bolder">21 June.</span> This will secure your spot at the conference at the reduced price.
                    </p>
 
                    <p class="justify-p">

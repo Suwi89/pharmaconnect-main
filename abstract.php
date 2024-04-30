@@ -199,7 +199,20 @@
                     <div class="col-xl-9 col-lg-11">
                         <!-- start contact form -->
                         <form action="email-templates/abstract.php" method="post" class="row contact-form-style-02  ">
-                            <div class="col-md-3 col-lg-3 mb-30px">
+
+                        <div class="col-md-6 mb-30px">
+                                <select class="form-select box-shadow-quadruple-large" id="abstract_theme" name="abstract_theme" placeholder="Abstract theme*" required>
+                                    <option value="">Select Abstract Theme</option>
+                                    <option value="Pharmaceutical regulation">Pharmaceutical regulation</option>
+                                    <option value="Manufacturing in Africa">Manufacturing in Africa</option>
+                                    <option value="Medicine use & service delivery">Medicine use & service delivery</option>
+                                    <option value="Supply chain innovations">Supply chain innovations</option>
+                                    <option value="Hot topic: AI for market access"> Hot topic: AI for market access  </option>
+                                </select>
+
+                            </div>
+
+                            <div class="col-md-6 mb-30px">
                                 <select class="form-select box-shadow-quadruple-large" id="title" name="title" placeholder="Select Title*" required>
                                     <option value="">Select Title</option>
                                     <option value="Mr">Mr</option>
@@ -213,10 +226,10 @@
 
                             </div>
 
-                            <div class="col-md-4 mb-30px">
+                            <div class="col-md-6 mb-30px">
                                 <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="last_name" name="last_name" placeholder="Last Name*" required/>
                             </div>
-                            <div class="col-md-5 mb-30px">
+                            <div class="col-md-6 mb-30px">
                                 <input class="box-shadow-quadruple-large form-control required" type="text" id="first_name" name="first_name" placeholder="First Name*" required />
                             </div>
                             <div class="col-md-6 mb-30px">
