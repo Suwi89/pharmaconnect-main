@@ -120,7 +120,7 @@
           
                             <li class="nav-item"><a href="pharmaconnect-conference-partners.html" class="nav-link">Partners</a></li>
                             <li class="nav-item"><a href="contact.html" class="nav-link">Contacts</a></li>
-                             <li class="nav-item"><a href="https://website-618e1425.ebx.nfp.mybluehost.me/register.php" class="nav-link">Register</a></li>
+                             <li class="nav-item"><a href="register.php" class="nav-link">Register</a></li>
                             
                            
                         </nav>
@@ -290,7 +290,7 @@
         </script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
+        
         <script type="text/javascript" src="js/main.js"></script>
 
 

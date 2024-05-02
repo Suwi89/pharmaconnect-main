@@ -1,94 +1,74 @@
 <?php
 // Connect to your MySQL database
 $host = 'localhost';
-$username = 'psaweb__admin';
-$password = 'r3KP3&5r$7V,';
-$dbname = 'psaweb_pharma';
+$username = 'ebxnfpmy_attach';
+$password = 'X08oeh=n&LUt';
+$dbname = 'ebxnfpmy_attachments_db';
 $conn = new mysqli($host, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Extract user data from the request
-    $abstract_theme = $_POST['abstract_theme'];
+    $registration_type = $_POST['registration_type'];
     $title = $_POST['title'];
-    $last_name = $_POST['last_name'];
-    $first_name = $_POST['first_name'];
-    $position = $_POST['position'];
-    $institution = $_POST['institution'];
-    $department = $_POST['department'];
+    $last_name = $_POST['familyname'];
+    $first_name = $_POST['name'];
+    $organisation = $_POST['organisation'];
     $address = $_POST['address'];
+    $postal_code = $_POST['postal-code'];
     $city = $_POST['city'];
     $country = $_POST['country'];
     $phone = $_POST['phone'];
     $email = $_POST['email'];
-    $abstracttitle = $_POST['abstracttitle'];
-    $submissiontype = $_POST['submissiontype'];
-    $abstract = $_POST['abstract'];
-    $keywords = $_POST['keywords'];
     $status = "submited";
-  
-    // Prepare and execute SQL statement to insert user data into the database
-    $stmt = $conn->prepare("INSERT INTO abstract (abstract_theme, title, last_name, first_name, position, institution,
-                            department, address, city, country, phone, email, abstracttitle, submissiontype, abstract, keywords, status ) 
-                           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $other_details = $_POST['comment'];
 
-    $stmt->bind_param("sssssssssssssssss", $abstract_theme, $title, $last_name, $first_name, $position, $institution, 
-                      $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status);
+    // Prepare and execute SQL statement to insert user data into the database
+    $stmt = $conn->prepare("INSERT INTO test_registration (registration_type, title, last_name, first_name, organisation, address, 
+                           postal_code, city, country, phone, email, status, other_details) 
+                           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssssssssss",$registration_type, $title, $last_name, $first_name, $organisation, $address, 
+                      $postal_code, $city, $country, $phone, $email, $status, $other_details);
     if ($stmt->execute()) {
         // Send email with user data
-        send_email_with_userdata($abstract_theme, $title, $last_name, $first_name, $position, $institution, 
-                                 $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status);
-        header("Location: ../abstract-success.php");
+        send_email_with_userdata($registration_type, $title, $last_name, $first_name, $organisation, $address, 
+                                 $postal_code, $city, $country, $phone, $email, $status, $other_details);
+        header("Location: register-success.php");
         exit;
     } else {
         echo "Error: " . $stmt->error;
     }
 }
 
-function send_email_with_userdata($abstract_theme, $title, $last_name, $first_name, $position, $institution, 
-                                  $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status) {
+function send_email_with_userdata($registration_type, $title, $last_name, $first_name, $organisation, $address, 
+                                  $postal_code, $city, $country, $phone, $email, $status, $other_details) {
     // Configure email settings (SMTP server, sender, recipients, etc.)
-    $to_admin = 'info@pharmaconnectafrica.com, mramshaw@pharmasystafrica.com';
-    // Email address of the administrator
+    // $to_admin = 'cathbertbusiku@gmail.com, aaronmwelwa@gmail.com, mramshaw@pharmasystafrica.com'; // Email address of the administrator
+    $to_admin = 'cathbertbusiku@gmail.com';
     $to_user = $email; // User's email address
-    $subject_admin = 'Abstract Submission'; 
+    $subject_admin = '🎉 New Registration Alert! 🎉';
     
     // Message for admin email
-    $message_admin = "
-    <html>
-    <head>
-    <title>Abstract Submission</title>
-    </head>
-    <body>
-    <p>Dear Admin,</p>
-    <p>{$first_name} {$last_name} has just submitted their abstract:</p>
-    <p><strong>Abstract Theme:</strong> {$abstract_theme}</p>
-    <p><strong>Title:</strong> {$title}</p>
-    <p><strong>Last Name:</strong> {$last_name}</p>
-    <p><strong>First Name:</strong> {$first_name}</p>
-    <p><strong>Position:</strong> {$position}</p>
-    <p><strong>Institution:</strong> {$institution}</p>
-    <p><strong>Department:</strong> {$department}</p>
-    <p><strong>Address:</strong> {$address}</p>
-    <p><strong>City:</strong> {$city}</p>
-    <p><strong>Country:</strong> {$country}</p>
-    <p><strong>Phone:</strong> {$phone}</p>
-    <p><strong>Email:</strong> {$email}</p>
-    <p><strong>Abstract Title:</strong> {$abstracttitle}</p>
-    <p><strong>Submission Type:</strong> {$submissiontype}</p>
-    <p><strong>Abstract:</strong> {$abstract}</p>
-    <p><strong>Keywords:</strong> {$keywords}</p>
-    <p><strong>Status:</strong> {$status}</p>
-    </body>
-    </html>
-    ";
-
+    $message_admin = "Dear Admin,\n\n";
+    $message_admin .= "A new user has just registered:\n\n";
+    $message_admin .= "Registation Type: $$registration_type\n";
+    $message_admin .= "Title: $title\n";
+    $message_admin .= "Last Name: $last_name\n";
+    $message_admin .= "First Name: $first_name\n";
+    $message_admin .= "Organisation: $organisation\n";
+    $message_admin .= "Address: $address\n";
+    $message_admin .= "Postal Code: $postal_code\n";
+    $message_admin .= "City: $city\n";
+    $message_admin .= "Country: $country\n";
+    $message_admin .= "Phone: $phone\n";
+    $message_admin .= "Email: $email\n";
+    $message_admin .= "Status: $status\n";
+    $message_admin .= "Other Details: $other_details\n";
 
     // Message for user email
-    $e_subject = 'ðŸŽ‰ Confirmation of your registration for PharmaConnect Africa Conference 2024 ðŸŽ‰';
+    $e_subject = '🎉 Confirmation of your registration for PharmaConnect Africa Conference 2024 🎉';
     $e_body = "<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
     <html dir='ltr' xmlns='http://www.w3.org/1999/xhtml' xmlns:o='urn:schemas-microsoft-com:office:office'>
     
@@ -160,7 +140,7 @@ function send_email_with_userdata($abstract_theme, $title, $last_name, $first_na
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <td align='center' class='esd-block-text' style='color: #dd6531;'>
-                                                                                            <h2>Confirmation of your abstract submission </h2>
+                                                                                            <h2>Confirmation of your registration</h2>
                                                                                             <h2>for PharmaConnect Africa Conference 2024</h1>
                                                                                         </td>
                                                                                     </tr>
@@ -182,12 +162,14 @@ function send_email_with_userdata($abstract_theme, $title, $last_name, $first_na
                                                                                 <tbody>
                                                                                     <tr>
                                                                                         <td align='left' class='esd-block-text'>
-                                                                                            <h3>Congratulations <?php echo $first_name; ?>!</p> ðŸŒŸ</h3>
-                                                                                            <p>You have successfully submitted your abstract for PharmaConnect Africa Conference 2024. We appreciate your contribution and look forward to potentially including it in our conference program..</p>
-                                                                                            <p>Please note that you will be informed about the acceptance of your abstract by 14 June 2024. Should your abstract be accepted, we encourage you to register for the conference as soon as possible to take advantage of our early bird rate, which is available until 21 June 2024.</p>
-                                                                                            <p>Should you need any further information or have any questions regarding your submission or the registration process, please feel free to contact us at info@pharmaconnectafrica.com.</p>
-                                                                                            <p>We are excited about your interest in the PharmaConnect Conference 2024 and eagerly anticipate your participation.    </p>
+                                                                                            <h3>Congratulations <?php echo $first_name; ?>!</p> 🌟</h3>
+                                                                                            <p>You have successfully registered for PharmaConnect Africa Conference 2024.</p>
+                                                                                            <p>We are thrilled to have you join us and look forward to your participation.</p>
+                                                                                            <h3>Invoice and Payment Information:</h3>
+                                                                                            <p>Shortly, you will receive an invoice for your registration. Please note that we do not currently offer an online payment system. If you have registered before 21 June 2024, to benefit from our reduced early bird rate, you will need to initiate payment before
+                                                                                             this date. Payments initiated after June 21 but before August 18 will be subject to the standard rate. Any payments received thereafter will be processed at the on-site registration rate.</p>
                                                                                             <p>If you have any further questions or need assistance, please feel free to contact us at info@pharmaconnectafrica.com.<br><br></p>
+          
                                                                                              <p>Warm Regards,</p>
                                                                                             <p>Mandi Ramshaw</p>
                                                                                         </td>

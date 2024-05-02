@@ -191,15 +191,29 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 text-center mb-2" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
-                        <span class="fw-600 ls-1px fs-20 alt-font d-inline-block text-uppercase mb-5px text-base-color">Registration</span>
-                        <h4 class="alt-font text-dark-gray fw-600 ls-minus-2px">Please complete the form below to register</h4>
+                        <span class="fw-600 ls-1px fs-20 alt-font d-inline-block text-uppercase mb-5px text-base-color">Register for PharmaConnect Africa Conference 2024</span>
+                        <h5 class="alt-font text-dark-gray fw-600 ls-minus-2px">Complete the registration form below to join us at PCA 2024. </h5>
+                        <p class="justify-p"> 
+                            If you have any questions regarding the registration process or payment, please do not hesitate to contact us at <span class="text-primary"> info@pharmaconnectafrica.org </span>. 
+                            We are here to assist you! 
+                        </p>
                     </div>
                 </div>
                 <div class="row row-cols-md-1 justify-content-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 100, "easing": "easeOutQuad" }'>
                     <div class="col-xl-9 col-lg-11">
                         <!-- start contact form -->
-                        <form action="email-templates/register-test.php" method="post" class="row contact-form-style-02  contact-form">
-                            <div class="col-md-3 mb-30px">
+                        <form action="email-templates/register-test.php" method="post" class="row contact-form-style-02  ">
+                            <div class="col-md-6 mb-30px">
+                                <select class="form-select box-shadow-quadruple-large" id="registration_type" name="registration_type" placeholder="Select Registration Type*" required>
+                                    <option value="">Select Registration Type</option>
+                                    <option value="Early bird">Early bird</option>
+                                    <option value="Standard">Standard</option>
+                                    <option value="Intern/post-grad">Intern/post-grad</option>
+                                    <option value="Student">Student</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 mb-30px">
                                 <select class="form-select box-shadow-quadruple-large" id="title" name="title" placeholder="Select Title*" required>
                                     <option value="">Select Title</option>
                                     <option value="Mr">Mr</option>
@@ -213,10 +227,10 @@
 
                             </div>
 
-                            <div class="col-md-4 mb-30px">
-                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="familyname" name="familyname" placeholder="Family Name*" required/>
+                            <div class="col-md-6 mb-30px">
+                                <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="familyname" name="familyname" placeholder="Last Name*" required/>
                             </div>
-                            <div class="col-md-5 mb-30px">
+                            <div class="col-md-6 mb-30px">
                                 <input class="box-shadow-quadruple-large form-control required" type="text" id="name" name="name" placeholder="First Name*" required />
                             </div>
                             <div class="col-md-6 mb-30px" >
@@ -361,7 +375,7 @@
         </script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
+       
         <script type="text/javascript" src="js/main.js"></script>
 
 

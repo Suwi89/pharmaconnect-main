@@ -231,7 +231,7 @@
                                 <input class="box-shadow-quadruple-large input-name form-control required" type="text" id="familyname" name="familyname" placeholder="Last Name*" required/>
                             </div>
                             <div class="col-md-6 mb-30px">
-                                <input class="box-shadow-quadruple-large form-control required" type="text" id="first_name" name="first_name" placeholder="First Name*" required />
+                                <input class="box-shadow-quadruple-large form-control required" type="text" id="name" name="name" placeholder="First Name*" required />
                             </div>
                             <div class="col-md-6 mb-30px" >
                                 <input class="box-shadow-quadruple-large form-control" type="text" id="organisation" name="organisation" placeholder="Organisation" required/>
@@ -375,7 +375,7 @@
         </script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
+       
         <script type="text/javascript" src="js/main.js"></script>
 
 

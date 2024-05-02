@@ -120,7 +120,7 @@
           
                             <li class="nav-item"><a href="pharmaconnect-conference-partners.html" class="nav-link">Partners</a></li>
                             <li class="nav-item"><a href="contact.html" class="nav-link">Contacts</a></li>
-                             <li class="nav-item"><a href="https://website-618e1425.ebx.nfp.mybluehost.me/register.php" class="nav-link">Register</a></li>
+                             <li class="nav-item"><a href="register.php" class="nav-link">Register</a></li>
                             
                            
                         </nav>
@@ -171,7 +171,7 @@
                 <div class="row align-items-center justify-content-center small-screen">
                     <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-small" data-anime='{ "el": "childs", "rotateX": [90, 0], "opacity": [0,1], "staggervalue": 150, "easing": "easeOutQuad" }'>
                     
-                        <h2 class="mb-0 text-white alt-font ls-minus-2px text-shadow-double-large fw-500">Abstract</h2>
+                        <h2 class="mb-0 text-white alt-font ls-minus-2px text-shadow-double-large fw-500">Submit an Abstract</h2>
                     </div>
                     <div class="down-section text-center" data-anime='{ "translateY": [100, 0], "opacity": [0,1], "easing": "easeOutQuad" }'>
                         <a href="#down-section" class="section-link">
@@ -268,7 +268,7 @@
                             
                             <div class="col-md-6 mb-30px">
                                 <select class="form-select box-shadow-quadruple-large" id="submissiontype" name="submissiontype" placeholder="Preferred submission type*" required>
-                                    <option value="">Select Title</option>
+                                    <option value="">Select Type</option>
                                     <option value="Oral Presentation">Oral Presentation (strictly 12 min)</option>
                                     <option value="Poster Presentation">Poster Presentation (A2 size)</option>
                                 </select>
@@ -402,7 +402,7 @@
         </script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/vendors.min.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCA56KqSJ11nQUw_tXgXyNMiPmQeM7EaSA&callback=initMap"></script>
+        
         <script type="text/javascript" src="js/main.js"></script>
 
 
