@@ -26,16 +26,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $status = "submited";
     $other_details = $_POST['comment'];
 
+    // Get current date and time
+    $create_date = date("Y-m-d H:i:s");
+
     // Prepare and execute SQL statement to insert user data into the database
     $stmt = $conn->prepare("INSERT INTO test_registration (registration_type, title, last_name, first_name, organisation, address, 
-                           postal_code, city, country, phone, email, status, other_details) 
-                           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssssssssss",$registration_type, $title, $last_name, $first_name, $organisation, $address, 
-                      $postal_code, $city, $country, $phone, $email, $status, $other_details);
+                        postal_code, city, country, phone, email, status, other_details, createDate) 
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssssssssssss", $registration_type, $title, $last_name, $first_name, $organisation, $address, 
+                    $postal_code, $city, $country, $phone, $email, $status, $other_details, $create_date);
     if ($stmt->execute()) {
         // Send email with user data
         send_email_with_userdata($registration_type, $title, $last_name, $first_name, $organisation, $address, 
-                                 $postal_code, $city, $country, $phone, $email, $status, $other_details);
+                                $postal_code, $city, $country, $phone, $email, $status, $other_details);
         header("Location: ../register-success.php");
         exit;
     } else {

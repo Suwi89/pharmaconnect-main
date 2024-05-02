@@ -30,17 +30,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $keywords = $_POST['keywords'];
     $status = "submited";
   
+    // Get current date and time
+    $create_date = date("Y-m-d H:i:s");
+
     // Prepare and execute SQL statement to insert user data into the database
     $stmt = $conn->prepare("INSERT INTO abstract (abstract_theme, title, last_name, first_name, position, institution,
-                            department, address, city, country, phone, email, abstracttitle, submissiontype, abstract, keywords, status ) 
-                           VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                            department, address, city, country, phone, email, abstracttitle, submissiontype, abstract, keywords, status, createDate) 
+                            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 
-    $stmt->bind_param("sssssssssssssssss", $abstract_theme, $title, $last_name, $first_name, $position, $institution, 
-                      $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status);
+    $stmt->bind_param("ssssssssssssssssss", $abstract_theme, $title, $last_name, $first_name, $position, $institution, 
+                    $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status, $create_date);
     if ($stmt->execute()) {
         // Send email with user data
         send_email_with_userdata($abstract_theme, $title, $last_name, $first_name, $position, $institution, 
-                                 $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status);
+                                $department, $address, $city, $country, $phone, $email, $abstracttitle, $submissiontype, $abstract, $keywords, $status);
         header("Location: ../abstract-success.php");
         exit;
     } else {
